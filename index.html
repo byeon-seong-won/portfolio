@@ -11,6 +11,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
 
     <script type="text/javascript" src="js/index.js"></script> 
 </head>
@@ -19,11 +25,8 @@
 
   <header>
     <nav>
-        <h1>
-            <a href="index.html">로고</a>
-        </h1>
         <ul id="menu">
-          <li data-menuanchor="sec0" class="active"><a href="#sec0">로고</a></li>
+          <li data-menuanchor="sec0" class="active"><a href="#sec0">Byseong</a></li>
           <li data-menuanchor="sec1"><a href="#sec1">About</a></li>
           <li data-menuanchor="sec2"><a href="#sec2">React Project</a></li>
           <li data-menuanchor="sec3"><a href="#sec3">Works</a></li>
@@ -42,17 +45,55 @@
 
       <!-- About -->
       <div class="section sec1">
-        <h1>About</h1>
+        <div class="profileContent">
+            <div><img src="img/profile.jpg" alt="profilimg"></div>
+            <div>
+               <h1>Byeon seong won</h1>
+               <ul>experience
+                 <li></li>
+               </ul>
+            </div>
+        </div>
       </div>
 
       <!-- React Project -->
       <div class="section sec2">
-
-        <div class="swiper-container">
+        <div class="swiper-container sec2Swiper">
           <div class="swiper-wrapper">
-              <div class="swiper-slide"><h1>React Project</h1>Slide 1</div>
-              <div class="swiper-slide"><h1>React Project</h1>Slide 2</div>
-              <div class="swiper-slide"><h1>React Project</h1>Slide 3</div>
+              <div class="swiper-slide">
+                <div class="webPuContent">
+                  <div>
+                    <div><img src="img/bluebottle.png" alt="bluebottle"></div>
+                    <div>
+                        <h1>Shopping mall</h1>
+                        <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                        <ul>
+                          <li>#HTML</li>
+                          <li>#CSSS</li>
+                          <li>#구현 100%</li>
+                        </ul>
+                        <button onclick="location.href='bluebottle.html'">상세보기</button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="webPuContent">
+                  <div>
+                    <div><img src="img/bluebottle.png" alt="bluebottle"></div>
+                    <div>
+                        <h1>My page</h1>
+                        <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                        <ul>
+                          <li>#HTML</li>
+                          <li>#CSSS</li>
+                          <li>#구현 100%</li>
+                        </ul>
+                        <button onclick="location.href='bluebottle.html'">상세보기</button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -61,12 +102,157 @@
 
       <!-- Works -->
       <div class="section sec3">
-        <h1>Works</h1>
+        <div class="swiper-container sec3Swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="webPuContent">
+                  <div>
+                    <div><img src="img/thezooom.png" alt="thezooom"></div>
+                    <div>
+                        <h1>더줌코리아 홈페이지</h1>
+                        <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                        <ul>
+                          <li>#HTML</li>
+                          <li>#CSSS</li>
+                          <li>#구현 100%</li>
+                        </ul>
+                        <button onclick="location.href='freitag.html'">상세보기</button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="webPuContent">
+                  <div>
+                    <div><img src="img/erundg.png" alt="erundg"></div>
+                    <div>
+                        <h1>이런등기 홈페이지</h1>
+                        <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                        <ul>
+                          <li>#HTML</li>
+                          <li>#CSSS</li>
+                          <li>#구현 100%</li>
+                        </ul>
+                        <button onclick="location.href='freitag.html'">상세보기</button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="webPuContent">
+                  <div>
+                    <div><img src="img/erundg.png" alt="erundg"></div>
+                    <div>
+                        <h1>에브리클릭 랜딩페이지</h1>
+                        <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                        <ul>
+                          <li>#HTML</li>
+                          <li>#CSSS</li>
+                          <li>#구현 100%</li>
+                        </ul>
+                        <button onclick="location.href='freitag.html'">상세보기</button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="webPuContent">
+                  <div>
+                    <div><img src="img/erundg.png" alt="erundg"></div>
+                    <div>
+                        <h1>더줌플러스 모바일</h1>
+                        <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                        <ul>
+                          <li>#HTML</li>
+                          <li>#CSSS</li>
+                          <li>#구현 100%</li>
+                        </ul>
+                        <button onclick="location.href='freitag.html'">상세보기</button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="webPuContent">
+                  <div>
+                    <div><img src="img/erundg.png" alt="erundg"></div>
+                    <div>
+                        <h1>퀴즈플러스 모바일</h1>
+                        <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                        <ul>
+                          <li>#HTML</li>
+                          <li>#CSSS</li>
+                          <li>#구현 100%</li>
+                        </ul>
+                        <button onclick="location.href='freitag.html'">상세보기</button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>  
 
       <!-- Renewal Publishing -->
       <div class="section sec4">
-        <h1>Renewal Publishing</h1>
+        <!-- <h1>PC renewal publishing</h1> -->
+        <div class="swiper-container sec4Swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="webPuContent">
+                <div>
+                  <div><img src="img/freitag.png" alt="freitagimg"></div>
+                  <div>
+                      <h1>FREITAG</h1>
+                      <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                      <ul>
+                        <li>#HTML</li>
+                        <li>#CSSS</li>
+                        <li>#구현 100%</li>
+                      </ul>
+                      <button onclick="location.href='freitag.html'">상세보기</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="swiper-slide">
+              <div class="webPuContent">
+                <div>
+                  <div><img src="img/bluebottle.png" alt="bluebottle"></div>
+                  <div>
+                      <h1>BLUEBOTTLE</h1>
+                      <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                      <ul>
+                        <li>#HTML</li>
+                        <li>#CSSS</li>
+                        <li>#구현 100%</li>
+                      </ul>
+                      <button onclick="location.href='bluebottle.html'">상세보기</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="swiper-slide">
+              <div class="webPuContent">
+                <div>
+                  <div><img src="img/nexon.png" alt="nexon"></div>
+                  <div>
+                      <h1>NEXON</h1>
+                      <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
+                      <ul>
+                        <li>#HTML</li>
+                        <li>#CSSS</li>
+                        <li>#구현 100%</li>
+                      </ul>
+                      <button onclick="location.href='nexon.html'">상세보기</button>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
     </div> 
 
     <!-- UI/UX planning -->
