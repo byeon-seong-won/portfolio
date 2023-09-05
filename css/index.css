@@ -47,13 +47,15 @@
     width: 100%;
     height: 100%;  
   }
-
+  .swiper-button-prev {z-index: 100000;}
 
 
 /* swiper 컨텐츠 공통 */
-.webPuContent>div{width: 1200px;height: 100%;margin-top: 20px;display: flex;border: 1px solid red;height: 100%;column-gap: 50px;}
+.webPuContent {height: 50%;}
+.webPuContent>div{width: 1200px;height: 100%;display: flex;border: 1px solid red;height: 100%;column-gap: 50px;align-items: center;}
 .webPuContent>div>div {flex: 1;}
-.webPuContent>div>div>img {width: 100%;height: 100%;border-radius: 10px;}
+.webPuContent>div>div:nth-child(2) {flex: 0.8;}
+.webPuContent>div>div>img {width: 100%;border-radius: 10px;}
 .webPuContent>div>div:nth-child(2) {text-align: left;}
 .webPuContent>div>div:nth-child(2)>h1 {color: #fff;font-size:30px;font-family: Poppins, Pretendard, "sans-serif";}
 .webPuContent>div>div:nth-child(2)>p {font-size: 20px;font-family: 'Noto sans KR',sans-serif;font-weight: 600;color: #ddd;letter-spacing: -0.5px;}

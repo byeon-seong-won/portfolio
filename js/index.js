@@ -39,6 +39,8 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
       // mousewheel: true,
       on: {
         slideChange: function(){        
