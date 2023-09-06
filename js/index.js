@@ -4,7 +4,7 @@
     // fullpage
     $('#fullpage').fullpage({         
       sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-      anchors: ['sec0','sec1', 'sec2', 'sec3', 'sec4', 'sec5'],
+      anchors: ['sec0','sec1', 'sec2', 'sec3', 'sec4'],
       menu: '#menu',
       scrollingSpeed: 1000,
       // scrollBar: true,
@@ -34,27 +34,27 @@
       slidesPerView: 1,
       spaceBetween: 0,
       freeMode: false,
-      speed: 1000,
+      speed: 1500,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      // mousewheel: true,
+      allowTouchMove : false,
+      navigation: {
+        nextEl: '.button-next01',
+        prevEl: '.button-prev01',
+      },
+
+      mousewheel: true,
       on: {
         slideChange: function(){        
           var idx = this.activeIndex;
-          // 처음과 마지막 슬라이드가 아닐경우 fullpage전환 막기
           if(this.activeIndex != 0 && idx != length1) $.fn.fullpage.setAllowScrolling(false);
-          if(length1 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) //슬라이드가 2개밖에 없을때
-          // console.log('즉시 : ' + idx);
+          if(length1 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) 
         },  
         slideChangeTransitionEnd: function(){
           var idx = this.activeIndex;
-          // 처음과 마지막 슬라이드일 경우 fullpage전환 풀기
           if(idx == 0 || idx >= length1-1) $.fn.fullpage.setAllowScrolling(true);
-          // console.log('전환후 : ' + idx);     
         },
         touchMove: function(e) {        
           var startY = e.touches.startY;
@@ -73,12 +73,16 @@
       slidesPerView: 1,
       spaceBetween: 0,
       freeMode: false,
-      speed: 1000,
+      speed: 1500,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
-      // mousewheel: true,
+      allowTouchMove : false,
+      navigation: {
+        nextEl: '.button-next02',
+        prevEl: '.button-prev02',
+      },
       on: {
         slideChange: function(){        
           var idx = this.activeIndex;
