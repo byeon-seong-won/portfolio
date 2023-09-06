@@ -12,11 +12,12 @@
 
 .detailIn {width: 1000px;margin: 0 auto;padding-top: 210px;padding-bottom: 150px;}
 .detailIn h1 {color: #fff;font-size: 50px;font-weight: bold;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-bottom: 50px;}
-.detailIn h2 {color: #ddd;font-size: 30px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 80px;margin-bottom: 20px;}
-.detailIn p {color: #ccc;font-size: 20px;font-family: 'Noto sans KR', sans-serif; letter-spacing: -0.5px;text-align: left;margin-bottom: 50px;}
+.detailIn h2 {color: #ddd;font-size: 30px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 130px;margin-bottom: 20px;}
+.detailIn h2.last {margin-top: 0;}
+.detailIn p {color: #ccc;font-size: 20px;font-family: 'Noto sans KR', sans-serif; letter-spacing: -0.5px;text-align: left;}
 
 .detailIn .mainImg,
-.detailIn .mapImg {width: 100%;border-radius: 15px;margin-bottom: 50px;}
+.detailIn .mapImg {width: 100%;border-radius: 15px;}
 
 .detailIn a.gotosite {font-family: 'Noto sans KR', sans-serif; letter-spacing: -0.5px;font-size: 20px;color: #ccc;display: block;width: 200px;border: 1px solid #ccc;margin: 50px auto 0;padding: 15px 10px;border-radius: 20px;}
 .detailIn a.gotosite:hover {background-color: #fff;color: #444;font-weight: bold;}

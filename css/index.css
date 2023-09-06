@@ -30,6 +30,7 @@
     padding: 0;
     margin: 0;
     background-color: #222;
+    border: 1px solid #fff;
   }
 
   .section {font-size: 3vw; text-align:center}
@@ -47,7 +48,18 @@
     width: 100%;
     height: 100%;  
   }
-  .swiper-button-prev {z-index: 100000;}
+
+
+  .swiper-button-prev,
+  .swiper-button-next {position: absolute;}
+  
+  .swiper-button-prev {left: 30%;}
+
+
+  .swiper-button-prev::after,
+  .swiper-button-next:after {color: #fff !important;}
+
+
 
 
 /* swiper 컨텐츠 공통 */
@@ -72,6 +84,10 @@ font-size: 14px;color: rgba(10, 241, 241, 0.829);padding: 5px 10px;}
 
 
 /* main */
+.imgWrap {position: relative;width: 1200px;margin: 0 auto;}
+.imgWrap:after {content: ''; position: absolute;width: 100%;height: 100%;bottom: 0;left: 0;}
+.mainImg {width: 1300px;}
+.imgWrap>h1 {color: #ddd;font-family: 'Anton', sans-serif;font-size: 50px;margin-bottom: 40px;text-align: left;}
 
 
 
