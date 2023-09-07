@@ -9,71 +9,56 @@
 
 
 /* 공통 */
-#fullpage {
-    width:100%;
-    height:100%;
-  }
-  .fp-tableCell {background-color: #222 !important;}
-  #menu li {display: inline-block;color: #000;line-height: 80px;}
-  #menu li:not(:first-child) {width: 10%;text-align: center;}
-  #menu li a {color: #888;}
-  #menu li:first-child  {width: 30%; text-align: center;}
-  #menu li:first-child a {color: #fff;font-family: 'Anton', sans-serif;font-size: 30px;}
-  #menu li.active a {border-bottom: 1px solid #ddd;padding-bottom: 5px;color: #ddd;}
-  #menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 80px;
-    z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #222;
-    border: 1px solid #fff;
-  }
+#fullpage {width:100%;height:100%;}
+.fp-tableCell {background-color: #222 !important;}
+.fp-tableCell>h1.title {color: #fff !important;width: 1440px;text-align: left;margin: 0 auto;font-family: Poppins, Pretendard, "sans-serif";font-weight: bold;} 
 
-  .section {font-size: 3vw; text-align:center}
-  
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-    background-color: #222;
-  }
-  .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;  
-  }
+.section {font-size: 2.5vw;}
+.swiper-container {width: 100%;height: 50%;background-color: #222;}
+.swiper-wrapper {position: relative;width: 1400px;margin: 0 auto;}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;  
+}
+.swiperArr {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 1650px;height: 100px;z-index: 100;}
+.swiperArr .swiper-button-next {position: absolute;right: 300px;}
+.swiper-button-prev, .swiper-button-next {z-index: 100 !important;}
+.swiper-button-prev::after,
+.swiper-button-next:after {color: #fff !important;z-index: 100 !important;}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {opacity: 1 !important;}
+.swiper-pagination-bullet {background-color: #eee !important;}
+.swiper-pagination-bullet-active {background-color:rgba(12, 231, 231, 0.596) !important; box-shadow: 0.5px 0.5px 2px 3px rgba(8, 207, 207, 0.596) !important;}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {bottom: 300px !important;}
 
 
-  .swiper-button-prev,
-  .swiper-button-next {position: absolute;}
-  
-  .swiper-button-prev {left: 30%;}
-
-
-  .swiper-button-prev::after,
-  .swiper-button-next:after {color: #fff !important;}
 
 
 
 
 /* swiper 컨텐츠 공통 */
-.webPuContent {height: 50%;}
-.webPuContent>div{width: 1200px;height: 100%;display: flex;border: 1px solid red;height: 100%;column-gap: 50px;align-items: center;}
+.webPuContent {    height: 50%;
+  width: 1440px;
+  margin: 0 auto;
+  margin-left: 0;}
+.webPuContent>div {width: 100%;height: 100%;display: flex;column-gap: 50px;align-items: center;}
 .webPuContent>div>div {flex: 1;}
-.webPuContent>div>div:nth-child(2) {flex: 0.8;}
+.webPuContent>div>div:nth-child(2) {flex: 1;}
 .webPuContent>div>div>img {width: 100%;border-radius: 10px;}
 .webPuContent>div>div:nth-child(2) {text-align: left;}
 .webPuContent>div>div:nth-child(2)>h1 {color: #fff;font-size:30px;font-family: Poppins, Pretendard, "sans-serif";}
 .webPuContent>div>div:nth-child(2)>p {font-size: 20px;font-family: 'Noto sans KR',sans-serif;font-weight: 600;color: #ddd;letter-spacing: -0.5px;}
 .webPuContent>div>div:nth-child(2)>ul {display: flex;margin-top: 30px;column-gap: 10px;}
-.webPuContent>div>div:nth-child(2)>ul>li {border: 1px solid rgba(12, 231, 231, 0.596);border-radius: 30px;
-font-size: 14px;color: rgba(10, 241, 241, 0.829);padding: 5px 10px;}
+.webPuContent>div>div:nth-child(2)>ul>li {
+  border: 1px solid rgba(12, 231, 231, 0.596);
+  border-radius: 30px;
+  font-size: 14px;
+  color: rgba(10, 241, 241, 0.829);
+  padding: 5px 10px;
+}
 .webPuContent>div>div:nth-child(2)>button {color: rgba(26, 212, 212, 0.829);font-size: 20px;background-color:rgba(15, 121, 121, 0.829);border-radius: 10px;padding: 5px 15px;}
 
 

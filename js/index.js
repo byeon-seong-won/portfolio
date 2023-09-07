@@ -31,6 +31,7 @@
     // swiper - react project
     var length1 = $(".sec2 .swiper-slide").length;
     var swiper1 = new Swiper('.sec2Swiper', {
+      loop : true,
       slidesPerView: 1,
       spaceBetween: 0,
       freeMode: false,
@@ -45,30 +46,31 @@
         prevEl: '.button-prev01',
       },
 
-      on: {
-        slideChange: function(){        
-          var idx = this.activeIndex;
-          if(this.activeIndex != 0 && idx != length1) $.fn.fullpage.setAllowScrolling(false);
-          if(length1 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) 
-        },  
-        slideChangeTransitionEnd: function(){
-          var idx = this.activeIndex;
-          if(idx == 0 || idx >= length1-1) $.fn.fullpage.setAllowScrolling(true);
-        },
-        touchMove: function(e) {        
-          var startY = e.touches.startY;
-          setTimeout(function(){
-            if(startY > e.touches.currentY) swiper1.slideNext();  
-            else swiper1.slidePrev();
-          },100);        
-        },
-      }, 
+      // on: {
+      //   slideChange: function(){        
+      //     var idx = this.activeIndex;
+      //     if(this.activeIndex != 0 && idx != length1) $.fn.fullpage.setAllowScrolling(false);
+      //     if(length1 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) 
+      //   },  
+      //   slideChangeTransitionEnd: function(){
+      //     var idx = this.activeIndex;
+      //     if(idx == 0 || idx >= length1-1) $.fn.fullpage.setAllowScrolling(true);
+      //   },
+      //   touchMove: function(e) {        
+      //     var startY = e.touches.startY;
+      //     setTimeout(function(){
+      //       if(startY > e.touches.currentY) swiper1.slideNext();  
+      //       else swiper1.slidePrev();
+      //     },100);        
+      //   },
+      // }, 
     }); 
     
 
     // swiper - works
     var length2 = $(".sec3 .swiper-slide").length;
     var swiper2 = new Swiper('.sec3Swiper', {
+      loop : true,
       slidesPerView: 1,
       spaceBetween: 0,
       freeMode: false,
@@ -82,28 +84,24 @@
         nextEl: '.button-next02',
         prevEl: '.button-prev02',
       },
-      on: {
-        slideChange: function(){        
-          var idx = this.activeIndex;
-          // 처음과 마지막 슬라이드가 아닐경우 fullpage전환 막기
-          if(this.activeIndex != 0 && idx != length2) $.fn.fullpage.setAllowScrolling(false);
-          if(length2 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) //슬라이드가 2개밖에 없을때
-          // console.log('즉시 : ' + idx);
-        },  
-        slideChangeTransitionEnd: function(){
-          var idx = this.activeIndex;
-          // 처음과 마지막 슬라이드일 경우 fullpage전환 풀기
-          if(idx == 0 || idx >= length2-1) $.fn.fullpage.setAllowScrolling(true);
-          // console.log('전환후 : ' + idx);     
-        },
-        touchMove: function(e) {        
-          var startY = e.touches.startY;
-          setTimeout(function(){
-            if(startY > e.touches.currentY) swiper2.slideNext();  
-            else swiper2.slidePrev();
-          },100);        
-        },
-      }, 
+      // on: {
+      //   slideChange: function(){        
+      //     var idx = this.activeIndex;
+      //     if(this.activeIndex != 0 && idx != length2) $.fn.fullpage.setAllowScrolling(false);
+      //     if(length2 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) 
+      //   },  
+      //   slideChangeTransitionEnd: function(){
+      //     var idx = this.activeIndex;
+      //     if(idx == 0 || idx >= length2-1) $.fn.fullpage.setAllowScrolling(true);  
+      //   },
+      //   touchMove: function(e) {        
+      //     var startY = e.touches.startY;
+      //     setTimeout(function(){
+      //       if(startY > e.touches.currentY) swiper2.slideNext();  
+      //       else swiper2.slidePrev();
+      //     },100);        
+      //   },
+      // }, 
     }); 
 
       
@@ -111,6 +109,7 @@
     // swiper - renewal
     var length3 = $(".sec4 .swiper-slide").length;
     var swiper3 = new Swiper('.sec4Swiper', {
+      loop : true,
       slidesPerView: 1,
       spaceBetween: 0,
       freeMode: false,
@@ -119,29 +118,30 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      allowTouchMove : false,
+      navigation: {
+        nextEl: '.button-next03',
+        prevEl: '.button-prev03',
+      },
       // mousewheel: true,
-      on: {
-        slideChange: function(){        
-          var idx = this.activeIndex;
-          // 처음과 마지막 슬라이드가 아닐경우 fullpage전환 막기
-          if(this.activeIndex != 0 && idx != length3) $.fn.fullpage.setAllowScrolling(false);
-          if(length3 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) //슬라이드가 2개밖에 없을때
-          // console.log('즉시 : ' + idx);
-        },  
-        slideChangeTransitionEnd: function(){
-          var idx = this.activeIndex;
-          // 처음과 마지막 슬라이드일 경우 fullpage전환 풀기
-          if(idx == 0 || idx >= length3-1) $.fn.fullpage.setAllowScrolling(true);
-          // console.log('전환후 : ' + idx);     
-        },
-        touchMove: function(e) {        
-          var startY = e.touches.startY;
-          setTimeout(function(){
-            if(startY > e.touches.currentY) swiper3.slideNext();  
-            else swiper3.slidePrev();
-          },100);        
-        },
-      }, 
+      // on: {
+      //   slideChange: function(){        
+      //     var idx = this.activeIndex;
+      //     if(this.activeIndex != 0 && idx != length3) $.fn.fullpage.setAllowScrolling(false);
+      //     if(length3 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false)
+      //   },  
+      //   slideChangeTransitionEnd: function(){
+      //     var idx = this.activeIndex;
+      //     if(idx == 0 || idx >= length3-1) $.fn.fullpage.setAllowScrolling(true);   
+      //   },
+      //   touchMove: function(e) {        
+      //     var startY = e.touches.startY;
+      //     setTimeout(function(){
+      //       if(startY > e.touches.currentY) swiper3.slideNext();  
+      //       else swiper3.slidePrev();
+      //     },100);        
+      //   },
+      // }, 
     }); 
 
 
