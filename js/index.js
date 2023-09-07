@@ -45,7 +45,6 @@
         prevEl: '.button-prev01',
       },
 
-      mousewheel: true,
       on: {
         slideChange: function(){        
           var idx = this.activeIndex;
