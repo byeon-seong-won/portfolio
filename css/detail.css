@@ -19,7 +19,21 @@
 .detailIn .mainImg,
 .detailIn .mapImg {width: 100%;border-radius: 15px;}
 
-.detailIn a.gotosite {font-family: 'Noto sans KR', sans-serif; letter-spacing: -0.5px;font-size: 20px;color: #ccc;display: block;width: 200px;border: 1px solid #ccc;margin: 50px auto 0;padding: 15px 10px;border-radius: 20px;}
+.detailIn a.gotosite,
+.detailIn a.gotolist {
+    font-family: 'Noto sans KR', sans-serif; 
+    letter-spacing: -0.5px;
+    font-size: 16px;
+    color: #ccc;
+    display: block;
+    border: 1px solid #ccc;
+    margin: 50px auto 0;
+    padding: 15px 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 150px;
+}
+.detailIn a.gotolist:hover,
 .detailIn a.gotosite:hover {background-color: #fff;color: #444;font-weight: bold;}
 
 .detailIn .workinfo {height: 250px;text-align: left;}
@@ -27,5 +41,3 @@
 .detailIn ul li {font-size: 19px;color: #ccc;}
 .detailIn ul li:nth-child(2n-1) {background-color:rgba(10, 239, 239, 0.4);border-radius: 15px;padding: 5px;color: #fff;width: 100px;text-align: center;display: inline-block;margin-right: 20px;}
 
-.detailIn a.gotolist {font-family: 'Noto sans KR', sans-serif; letter-spacing: -0.5px;font-size: 20px;color: #ccc;display: block;width: 200px;border: 1px solid #ccc;margin: 0 auto;padding: 15px 10px;border-radius: 20px;}
-.detailIn a.gotolist:hover {background-color: #fff;color: #444;font-weight: bold;}
