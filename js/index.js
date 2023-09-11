@@ -9,7 +9,6 @@
       scrollingSpeed: 1000,
       // scrollBar: true,
       onLeave: function(origin, destination, direction) {
-        // 빠른전환으로 이벤트중복시 fullpage와 swiper전환시점 분리막기
         $('#fullpage').on('scroll touchmove mousewheel', function(event) {                    
           event.preventDefault();
           event.stopPropagation();
@@ -17,14 +16,13 @@
         });
 
       },
-      afterLoad: function(anchorLink, index) {      
-        // 전환이 끝난후 이벤트풀기                               
+      afterLoad: function(anchorLink, index) {                                   
         $('#fullpage').off('scroll mousewheel');      
-        if(!$(".fp-completely .swiper-wrapper").length > 0) $('#fullpage').off('touchmove'); // 모바일분기
+        if(!$(".fp-completely .swiper-wrapper").length > 0) $('#fullpage').off('touchmove');
 
         if(!$(".sec2").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
         if(!$(".sec3").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); 
-        if(!$(".sec4").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);// 슬라이드 섹션을 벗어나면 휠풀어주기
+        if(!$(".sec4").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
       }
     });           
   
@@ -155,12 +153,8 @@
 
 
 
-
-    $(window).scroll(function() {
-      
-
-
-     // 브라우저 resize 처리
+  // 브라우저 resize 처리
+  $(window).scroll(function() {
     window.addEventListener("resize", function() {
       $(window).scrollTop(0);
 
