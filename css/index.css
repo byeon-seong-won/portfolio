@@ -11,10 +11,10 @@
 /* 공통 */
 #fullpage {width:100%;height:100%;}
 .fp-tableCell {background-color: #222 !important;}
-.fp-tableCell>h1.title {color: #fff !important;width: 1200px;text-align: left;margin: 0 auto;font-family: Poppins, Pretendard, "sans-serif";font-weight: bold;} 
+.fp-tableCell>h1.title {color: #fff !important;width: 1200px;text-align: left;margin: 0 auto 20px;font-family: Poppins, Pretendard, "sans-serif";font-weight: bold;} 
 
 .section {font-size: 2.5vw;}
-.swiper-container {width: 100%;height: 50%;background-color: #222;}
+.swiper-container {width: 100%;background-color: #222;}
 .swiper-wrapper {position: relative;width: 1200px;margin: 0 auto;}
 .swiper-slide {
   display: flex;
