@@ -23,7 +23,18 @@
         if(!$(".sec2").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
         if(!$(".sec3").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); 
         if(!$(".sec4").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
+      },
+      on: {
+      slideChange : function() {
+        console.log("activeIndex" + this.activeIndex)
+        if (this.activeIndex === 2) {
+
+        } else if (this.activeIndex !== 2) {
+
+        }
       }
+      }
+
     });           
   
     // swiper - react project
