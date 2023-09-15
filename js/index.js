@@ -24,16 +24,7 @@
         if(!$(".sec3").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); 
         if(!$(".sec4").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
       },
-      on: {
-      slideChange : function() {
-        console.log("activeIndex" + this.activeIndex)
-        if (this.activeIndex === 2) {
 
-        } else if (this.activeIndex !== 2) {
-
-        }
-      }
-      }
 
     });           
   
@@ -154,7 +145,25 @@
     }); 
 
 
+
   });
+
+
+
+  window.instance = new TypeIt("#typing1", {
+    speed: 300
+  })
+    .type("")
+    .delete(4)
+    .type("ring.")
+    .delete()
+    .options({
+      speed: 300
+    })
+    .type("")
+    .go();
+  
+
 
 
 
