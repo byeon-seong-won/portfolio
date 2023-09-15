@@ -151,7 +151,7 @@
 
 
   window.instance = new TypeIt("#typing1", {
-    speed: 300
+    speed: 140
   })
     .type("")
     .delete(4)
