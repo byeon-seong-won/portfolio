@@ -462,3 +462,14 @@
 .sec4>h1 {color: #fff;font-size: 40px;font-family: Poppins, Pretendard, "sans-serif";text-align: left;} */
 
 /* planning */
+
+
+
+
+@media (min-width : 1440px) and (max-width : 1600px) {
+  .swiperArr {width: 1200px;}
+  .swiper-wrapper {width: 1000px;}
+  .fp-tableCell>h1.title {width: 1000px;}
+  .profileContent  {width: 1000px;}
+  .webPuContent {width: 1000px;}
+}
