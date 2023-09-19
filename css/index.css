@@ -80,6 +80,10 @@
 
 
 
+
+
+
+
 /* main - curtain */
 /* 커튼 효과 */
 .curtain {
@@ -87,7 +91,77 @@
   overflow:hidden;
   width:100%;
   height:100vh;
+  z-index: 500;
 }
+
+.notice {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  z-index: 10000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+
+
+
+
+
 .curtain__panel {
   background:orange;
   width:50%;
@@ -109,10 +183,9 @@
   text-align:center;
   font-size:30vh;
   color:#fff;
-
   background: url(../img/mainImg03.png) no-repeat center center;
   background-size: contain;
-  border-radius: 250px 250px 200px 200px;
+  /* border-radius: 250px 250px 200px 200px; */
 }
 .curtain__prize:before {
   content:'';
@@ -129,12 +202,20 @@
   z-index:100;
   opacity:0;
 }
-[type="checkbox"]:checked ~ .curtain__panel--left {
+.curtain__panel--left,
+.curtain__panel--right {background: url(../img/curt.png) no-repeat center center;}
+
+
+
+/* [type="checkbox"]:checked ~ .curtain__panel--left {
   transform:translateX(-100%)
 }
 [type="checkbox"]:checked ~ .curtain__panel--right {
   transform:translateX(100%)
-}
+} */
+/* */
+
+
 
 
 /* typing plugIn*/
@@ -148,7 +229,7 @@
 }
 #m0 h2 {
   font-family: 'Tangerine', cursive;
-  font-size:10rem;
+  font-size:13rem;
   letter-spacing: 6px;
   font-weight:bold;
   color:#fff;
