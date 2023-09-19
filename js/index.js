@@ -190,6 +190,33 @@
 
 
 
+  $(function(){
+    var perNum = 100;
+    $('.second.circle').circleProgress({
+      value: perNum/100,
+      startAngle:100,
+      size:200,
+      fill:{
+        gradient:["#37FF8B","#37FF8B","#37FF8B","#37FF8B"],
+        gradientAngle: Math.PI / 2
+      },
+      animation:{
+        duration:2200,
+        easing:"swing"
+      },
+      lineCap : "round",
+      reverse:true,
+      emptyFill: "transparent",
+      }).on('circle-animation-end',function(event) {
+        $(".secondNotice").css({"display" : 'block'})
+      })
+
+
+
+    });
+
+
+
 
   
 
