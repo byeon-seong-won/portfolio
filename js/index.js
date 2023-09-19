@@ -20,14 +20,28 @@
         $('#fullpage').off('scroll mousewheel');      
         if(!$(".fp-completely .swiper-wrapper").length > 0) $('#fullpage').off('touchmove');
 
+        // if(index == 1) {
+        //   $("header nav").css({"display" : "none"})
+        // } else {
+        //   $("header nav").css({"display" : "block"})
+        // }
+
+
+        if(index == 1) {
+          $("header nav").css({"display" : "none"})
+        } else {
+          $("header nav").css({"display" : "block"})
+        }
+
+
+        
         if(!$(".sec2").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
         if(!$(".sec3").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); 
         if(!$(".sec4").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
       },
-
-
     });           
   
+
     // swiper - react project
     var length1 = $(".sec2 .swiper-slide").length;
     var swiper1 = new Swiper('.sec2Swiper', {
@@ -154,28 +168,31 @@
     $(".curtain__panel--left").css({"transform":"translateX(-100%)"})
     $(".curtain__panel--right").css({"transform":"translateX(100%)"})
     $(".notice").css({"display" : "none"})
-    window.instance = new TypeIt("#typing1", {
-      speed: 140
-    })
-      .type("")
-      .delete(4)
-      .type("ring.")
-      .delete()
-      .options({
-        speed: 300
-      })
-      .type("")
-      .go();
-
-      // $('.section.active [data-aos]').each(function(){
-      //   $(this).addClass("aos-animate")
-      // });
-
-
-
+    // window.instance = new TypeIt("#typing1", {
+    //   speed: 120
+    // })
+    //   .type("")
+    //   .delete(4)
+    //   .type("ring.")
+    //   .delete()
+    //   .options({
+    //     speed: 300
+    //   })
+    //   .type("")
+    //   .go();
 
 
   })
+
+
+
+
+
+
+
+
+  
+
 
 
 
