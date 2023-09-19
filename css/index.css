@@ -127,12 +127,12 @@
   background-color: #222;
   border-radius: 40px;
 }
-
-.notice>h1 {font-size: 24px;letter-spacing: -0.05em;font-weight: 500;}
-.notice>p {font-size: 22px;letter-spacing: -0.05em;font-weight: 500;margin-top: 10px;}
-.notice>div:not(.btnBg) {display: flex;justify-content: center;}
-.notice>div>div {border: 1px solid #fff;}
-.notice>div>div>p {font-size: 20px;letter-spacing: -0.05em;}
+.secondNotice {display: none;}
+.secondNotice>h1 {font-size: 24px;letter-spacing: -0.05em;font-weight: 500;}
+.secondNotice>p {font-size: 22px;letter-spacing: -0.05em;font-weight: 500;margin-top: 10px;}
+.secondNotice>div:not(.btnBg) {display: flex;justify-content: center;}
+.secondNotice>div>div {border: 1px solid #fff;}
+.secondNotice>div>div>p {font-size: 20px;letter-spacing: -0.05em;}
 
 
 
@@ -228,7 +228,10 @@
   opacity:0;
 }
 .curtain__panel--left,
-.curtain__panel--right {background: url(../img/curt.png) no-repeat center center;}
+.curtain__panel--right {
+  background-color: #222;
+  /* background: url(../img/curt.png) no-repeat center center; */
+}
 
 
 
@@ -263,6 +266,34 @@
 
 
 
+
+
+
+
+
+
+/* <------ 애니메이션 ------->  */
+.imgWrap>div.second {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  top: 253px;
+  right: 312px;
+}
+.imgWrap>div.second>canvas {width: 190px !important;height: 190px !important;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.imgWrap>div.second>p {
+  color: #37FF8B;
+  font-size: 50px; 
+  letter-spacing: -0.025em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 10px;
+  font-family: 'roboto';
+  font-weight: 500;
+}
+/* <------  애니메이션 ------->  */
 
 
 
