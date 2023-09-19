@@ -150,19 +150,34 @@
 
 
 
-  window.instance = new TypeIt("#typing1", {
-    speed: 140
-  })
-    .type("")
-    .delete(4)
-    .type("ring.")
-    .delete()
-    .options({
-      speed: 300
+  $(".noticeclick").click(function () {
+    $(".curtain__panel--left").css({"transform":"translateX(-100%)"})
+    $(".curtain__panel--right").css({"transform":"translateX(100%)"})
+    $(".notice").css({"display" : "none"})
+    window.instance = new TypeIt("#typing1", {
+      speed: 140
     })
-    .type("")
-    .go();
-  
+      .type("")
+      .delete(4)
+      .type("ring.")
+      .delete()
+      .options({
+        speed: 300
+      })
+      .type("")
+      .go();
+
+      // $('.section.active [data-aos]').each(function(){
+      //   $(this).addClass("aos-animate")
+      // });
+
+
+
+
+
+  })
+
+
 
 
 
