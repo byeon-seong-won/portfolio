@@ -164,59 +164,77 @@
 
 
 
-  $(".noticeclick").click(function () {
-    $(".curtain__panel--left").css({"transform":"translateX(-100%)"})
-    $(".curtain__panel--right").css({"transform":"translateX(100%)"})
-    $(".notice").css({"display" : "none"})
-    // window.instance = new TypeIt("#typing1", {
-    //   speed: 120
-    // })
-    //   .type("")
-    //   .delete(4)
-    //   .type("ring.")
-    //   .delete()
-    //   .options({
-    //     speed: 300
-    //   })
-    //   .type("")
-    //   .go();
+    // 인트로 - 메인 효과
+    $(function() {
+      // 스크롤 막기
+      // $('html, body').css({'overflow': 'hidden', 'height': '100%'});
+      // $('html, body').off('scroll touchmove mousewheel');
 
-
-  })
-
-
-
-
-
-
-
-  $(function(){
-    var perNum = 100;
-    $('.second.circle').circleProgress({
-      value: perNum/100,
-      startAngle:100,
-      size:200,
-      fill:{
-        gradient:["#37FF8B","#37FF8B","#37FF8B","#37FF8B"],
-        gradientAngle: Math.PI / 2
-      },
-      animation:{
-        duration:2200,
-        easing:"swing"
-      },
-      lineCap : "round",
-      reverse:true,
-      emptyFill: "transparent",
-      }).on('circle-animation-end',function(event) {
-        $(".secondNotice").css({"display" : 'block'})
+      var perNum = 100;
+      $('.second.circle').circleProgress({
+        value: perNum/100,
+        startAngle:300,
+        size:200,
+        fill:{
+          gradient:["#37FF8B","#37FF8B"],
+          gradientAngle: Math.PI / 2
+        },
+        animation:{
+          duration:2200,
+          easing:"swing"
+        },
+        lineCap : "butt",
+        reverse:true
+              
+        }).on('circle-animation-progress', function(event, progress) {
+              $(".second.circle>canvas").css({"box-shadow" : "20px 20px 60px #166638, -20px -20px 60px #58ffde," })
+              $(this).find('.perc').html(Math.round(perNum * progress) + '<span>%</span>');
+              setTimeout("startAni()", 2300);  
+              setTimeout("showMain()", 3100);
       })
-
-
-
     });
 
+    // 문구 애니메이션
+    function startAni() {
+      $(".hover-text").addClass('active')
+    };
+
+    // 메인페이지 등장
+    function showMain() {
+      $(".notice").css({"opacity" : "0"})
+      $(".curtain__panel--left").css({"transform":"translateX(-100%)"});
+      $(".curtain__panel--right").css({"transform":"translateX(100%)"});
+    };
+      
 
 
+
+
+
+
+
+
+
+    // slick slider
+    $('.slickslider01').slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      speed: 300,
+      dots: true,
+      autoplay: true,     
+      autoplaySpeed: 3000
+    });
+    $('.slickslider02').slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      speed: 300,
+      dots: true,
+      autoplay: true,     
+      autoplaySpeed: 2000
+    });
+    
 
   
 
