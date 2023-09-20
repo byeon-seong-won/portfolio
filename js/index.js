@@ -190,7 +190,7 @@
               $(".second.circle>canvas").css({"box-shadow" : "20px 20px 60px #166638, -20px -20px 60px #58ffde," })
               $(this).find('.perc').html(Math.round(perNum * progress) + '<span>%</span>');
               setTimeout("startAni()", 2300);  
-              setTimeout("showMain()", 3100);
+              setTimeout("showMain()", 3700);
       })
     });
 
