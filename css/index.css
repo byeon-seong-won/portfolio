@@ -567,7 +567,7 @@
 
 /* mobile */
 @media (min-width : 320px) and (max-width : 767.9px) {
-  .fp-tableCell {padding: 0 20px;}
+  .fp-tableCell {padding: 150px 20px 0;}
   .swiperArr {display: none;}
   .swiper-wrapper,
   .slickImg {width: 100%;}
