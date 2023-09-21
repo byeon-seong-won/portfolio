@@ -17,7 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&   family=Oleo+Script:wght@400;700&family=Tangerine:wght@700&  display=swap" rel="stylesheet">
-  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
@@ -27,9 +28,10 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <script src="js/slick.js"></script>
+
 </head>
 <body>
-  <header>
+  <header class="indHeader">
     <nav>
         <ul id="menu" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" >
           <li data-menuanchor="sec0" class="active"><a href="#sec0">Byseong</a></li>
@@ -82,6 +84,7 @@
                   </div>
                 </div>
               </div>
+
               <!-- 브라우저 모달창 -->
               <!-- <div class="browseNotice">
                 <h1>현재 Chrome 브라우저 및 PC(1440px~)에 최적화되어있습니다.</h1>
@@ -97,6 +100,7 @@
                   </div>
                 </div>
               </div> -->
+
             </div>
             <div class="curtain__panel curtain__panel--right"></div>
             
@@ -110,46 +114,55 @@
 
       <!-- About -->
       <div class="section sec1">
-        <h1 class="title">About Me</h1>
+        <h1 class="title aboutTitle">About Me</h1>
         <div class="profileContent">
           <div>
-            <img src="img/profileimg.jpg" alt="profilimg">
-            <p>끊임없이 나아가는 퍼블리셔 변성원입니다.</p>
-            <p>
-              풀스택 교육과정 수료 후, 화면단에 정보를 제공하는 것에 흥미를 갖게 되어 더욱 집중적으로 배우고자 퍼블리셔 과정을 따로 수료하였습니다.<br>
-              이와 함께 데이터까지 다룰 수 있는 프론트엔드에 관심이 생겨 꾸준히 공부해오고 있습니다.<br>
-              현재 React에 중점을 두고 공부하고 있으며, 새로운 기술/지식 등에 있어 적극적인 자세로 임하겠습니다.
-            </p>
+            <div><img src="img/profileimg.jpg" alt="profilimg"></div>
+            <div>
+              <p>끊임없이 나아가는 퍼블리셔 변성원입니다.</p>
+              <p class="nomobile">
+                풀스택 교육과정 수료 후, 화면단에 정보를 제공하는 것에 흥미를 갖게 되어 더욱 집중적으로 배우고자 퍼블리셔 과정을 따로 수료하였습니다.<br>
+                이와 함께 데이터까지 다룰 수 있는 프론트엔드에 관심이 생겨 꾸준히 공부해오고 있습니다.<br>
+                현재 React에 중점을 두고 공부하고 있으며, 새로운 기술/지식 등에 있어 적극적인 자세로 임하겠습니다.
+              </p>
+              <p class="mobile">
+                풀스택 교육과정 수료 후, 화면단에 정보를 제공하는 것에 흥미를 갖게 되어 더욱 집중적으로 배우고자 퍼블리셔 과정을 따로 수료하였습니다.<br>
+                이와 함께 데이터까지 다룰 수 있는 프론트엔드에 관심이 생겨 꾸준히 공부해오고 있습니다.<br>
+                현재 React에 중점을 두고 공부하고 있으며, 새로운 기술/지식 등에 있어 적극적인 자세로 임하겠습니다.
+              </p>
+            </div>
           </div>
           <div>
-            <p>💻 experience</p>
-            <ul>
-              <li>
-                <span>
-                  <b>2023.02.20 ~ </b>
-                  <br>[더줌코리아] UI/UX팀 퍼블리셔 근무
-                </span>
-                <br>
-              </li>
-              <li>
+            <div>
+              <p>💻 experience</p>
+              <ul>
+                <li>
                   <span>
-                    <b>2022.07.07 ~ 2022.12.23 (760H)</b>   
-                    <br>[이젠 아카데미] 모바일 UI/UX 웹&앱  디자인 (웹퍼블리셔)<br>스마트 6개월  과정 수료
+                    <b>2023.02.20 ~ </b>
+                    <br>[더줌코리아] UI/UX팀 퍼블리셔 근무
                   </span>
-              </li>
-              <li>
-                  <span>
-                    <b>2021.09.27 ~ 2022.06.30</b>
-                    <br>[유클릭] Oracle Database Engineer팀 근무
-                  </span>
-              </li>
-              <li>
-                  <span>
-                    <b>2021.03.02 ~ 2021.12</b>
-                    <br>[한국폴리텍대학 분당융합기술교육원] 하이테크과정 <br>데이터융합SW과 10개월 과정 수료
-                  </span>
-              </li>
-            </ul>
+                  <br>
+                </li>
+                <li>
+                    <span>
+                      <b>2022.07.07 ~ 2022.12.23 (760H)</b>   
+                      <br>[이젠 아카데미] 모바일 UI/UX 웹&앱  디자인 (웹퍼블리셔)<br>스마트 6개월  과정 수료
+                    </span>
+                </li>
+                <li>
+                    <span>
+                      <b>2021.09.27 ~ 2022.06.30</b>
+                      <br>[유클릭] Oracle Database Engineer팀 근무
+                    </span>
+                </li>
+                <li>
+                    <span>
+                      <b>2021.03.02 ~ 2021.12</b>
+                      <br>[한국폴리텍대학 분당융합기술교육원] 하이테크과정 <br>데이터융합SW과 10개월 과정 수료
+                    </span>
+                </li>
+              </ul>
+            </div>
             <div>
               <p>📚 skills</p>
               <p>React.js, Styled-Component, HTML5, CSS3, Javascript, jQuery, SVG, Figma, Photoshop, Illustrator, Git, Linux </p>
@@ -170,7 +183,7 @@
             <div class="swiper-slide">
               <div class="webPuContent">
                 <div>
-                  <div><img src="img/shop.PNG" alt="shop"></div>
+                  <div><img src="img/shopmall.png" alt="shop"></div>
                   <div>
                       <h1>Shopping mall</h1>
                       <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
@@ -221,13 +234,14 @@
             <div class="swiper-slide">
               <div class="webPuContent">
                 <div>
-                  <div><img src="img/every.png" alt="every"></div>
+                  <div><img src="img/every01.png" alt="every"></div>
                   <div>
                       <h1>에브리클릭 랜딩페이지</h1>
                       <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
                       <ul>
                         <li>#HTML</li>
                         <li>#CSSS</li>
+                        <li>#3pages</li>
                         <li>#기여도 100%</li>
                       </ul>
                       <button onclick="location.href='everydetail.html'">상세보기</button>
@@ -238,13 +252,15 @@
             <div class="swiper-slide">
               <div class="webPuContent">
                 <div>
-                  <div><img src="img/erundg.png" alt="erundg"></div>
+                  <div><img src="img/erundg01.png" alt="erundg"></div>
                   <div>
                       <h1>이런등기 홈페이지</h1>
                       <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
                       <ul>
                         <li>#HTML</li>
                         <li>#CSSS</li>
+                        <li>#15pages</li>
+                        <li>#popup</li>
                         <li>#기여도 100%</li>
                       </ul>
                       <button onclick="location.href='erundgdetail.html'">상세보기</button>
@@ -255,13 +271,14 @@
             <div class="swiper-slide">
               <div class="webPuContent">
                 <div>
-                  <div><img src="img/thezooom.png" alt="thezooom"></div>
+                  <div><img src="img/thezooom03.png" alt="thezooom"></div>
                   <div>
                       <h1>더줌코리아 홈페이지</h1>
                       <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
                       <ul>
                         <li>#HTML</li>
                         <li>#CSSS</li>
+                        <li>#main page</li>
                         <li>#기여도 50%</li>
                       </ul>
                       <button onclick="location.href='thezooomdetail.html'">상세보기</button>
@@ -279,6 +296,8 @@
                       <ul>
                         <li>#HTML</li>
                         <li>#CSSS</li>
+                        <li>#15pages</li>
+                        <li>#popup</li>
                         <li>#기여도 100%</li>
                       </ul>
                       <button onclick="location.href='thezpdetail.html'">상세보기</button>
@@ -296,6 +315,8 @@
                       <ul>
                         <li>#HTML</li>
                         <li>#CSSS</li>
+                        <li>#4pages</li>
+                        <li>#popup</li>
                         <li>#기여도 100%</li>
                       </ul>
                       <button onclick="location.href='qmongdetail.html'">상세보기</button>
@@ -306,14 +327,15 @@
             <div class="swiper-slide">
               <div class="webPuContent">
                 <div>
-                  <div><img src="img/quizmongmain.png" alt="erundg"></div>
+                  <div><img src="img/dreampass.png" alt="dreampass"></div>
                   <div>
                       <h1>드림패스 모바일</h1>
                       <p>상업용 부동산 조각투자 플랫폼 웹앱 버전 구축</p>
                       <ul>
                         <li>#HTML</li>
                         <li>#CSSS</li>
-                        <li>#include HTML</li>
+                        <li>#10pages</li>
+                        <li>#popup</li>
                         <li>#기여도 100%</li>
                       </ul>
                       <button onclick="location.href='dpassdetail.html'">상세보기</button>
@@ -332,9 +354,26 @@
 
       <!-- Renewal Publishing -->
       <div class="section sec4">
-        <h1 class="title">PC renewal</h1>
+        <h1 class="title">Publishing</h1>
         <div class="swiper-container sec4Swiper">
           <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="webPuContent">
+                <div>
+                  <div><img src="img/portimg.png" alt="portimg"></div>
+                  <div>
+                      <h1>Byseong</h1>
+                      <p>퍼블리셔 포트폴리오</p>
+                      <ul>
+                        <li>#HTML</li>
+                        <li>#CSSS</li>
+                        <li>#100% 개인작업</li>
+                      </ul>
+                      <button onclick="location.href='portdetail.html'">상세보기</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
             <div class="swiper-slide">
               <div class="webPuContent">
                 <div>
@@ -398,7 +437,8 @@
 
       <!-- footer -->
       <div class="section sec5">
-        <h1 class="title"> Thank you for watching! </h1>
+        <h1 class="title foottitle"> Thank you for watching! </h1>
+        
         <div class="slickImg">
           <div class="slick">
             <div class="slickslider slickslider01">
@@ -436,9 +476,14 @@
           </div>
         </div>
 
-        <div class="footer">
-          본 사이트는  
-        </div>
+        <p class="footsbtitle">
+          본 페이지는 상업적 목적이 아닌
+          개인 포트폴리오용으로 제작되었습니다. <br>
+          © 2023 Byeon-seong-won. All Rights Reserved.
+        </p>
+
+
+        
       </div>  
 
     <!-- UI/UX planning -->
