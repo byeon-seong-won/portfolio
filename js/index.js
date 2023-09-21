@@ -1,40 +1,50 @@
 
 
+
+
   $(document).ready(function() {
-    // fullpage
+
+    var width = $( window ).width();
+
+ 
+
+    // 스크롤 풀기
+    $('body').off('scroll touchmove mousewheel'); 
+
+    // 전체 fullpage
     $('#fullpage').fullpage({         
       sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
       anchors: ['sec0','sec1', 'sec2', 'sec3', 'sec4'],
       menu: '#menu',
       scrollingSpeed: 1000,
+      responsiveWidth: 768,
       // scrollBar: true,
       onLeave: function(origin, destination, direction) {
-        $('#fullpage').on('scroll touchmove mousewheel', function(event) {                    
-          event.preventDefault();
-          event.stopPropagation();
-          return false;
-        });
-
+        if(width > 1024) {
+          $('#fullpage').on('scroll touchmove mousewheel', function(event) {                    
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+          });
+        }
       },
       afterLoad: function(anchorLink, index) {                                   
         $('#fullpage').off('scroll mousewheel');      
         if(!$(".fp-completely .swiper-wrapper").length > 0) $('#fullpage').off('touchmove');
 
-        // if(index == 1) {
-        //   $("header nav").css({"display" : "none"})
-        // } else {
-        //   $("header nav").css({"display" : "block"})
-        // }
-
-
-        if(index == 1) {
-          $("header nav").css({"display" : "none"})
+        if(width > 769) {
+          if(index == 1) {
+            $("header.indHeader nav").css({"display" : "none"})
+          } else {
+            $("header.indHeader nav").css({"display" : "block"})
+          }
         } else {
-          $("header nav").css({"display" : "block"})
+          if(index == 1) {
+            $("header.indHeader").css({"position" : "fixed"})
+          }
         }
 
 
-        
         if(!$(".sec2").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
         if(!$(".sec3").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); 
         if(!$(".sec4").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
@@ -54,30 +64,18 @@
         el: '.swiper-pagination',
         clickable: true,
       },
-      allowTouchMove : false,
+      breakpoints: {
+        320: {
+          allowTouchMove : true,  
+        },
+        1200: {
+          allowTouchMove : false, 
+        },
+      },
       navigation: {
         nextEl: '.button-next01',
         prevEl: '.button-prev01',
       },
-
-      // on: {
-      //   slideChange: function(){        
-      //     var idx = this.activeIndex;
-      //     if(this.activeIndex != 0 && idx != length1) $.fn.fullpage.setAllowScrolling(false);
-      //     if(length1 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) 
-      //   },  
-      //   slideChangeTransitionEnd: function(){
-      //     var idx = this.activeIndex;
-      //     if(idx == 0 || idx >= length1-1) $.fn.fullpage.setAllowScrolling(true);
-      //   },
-      //   touchMove: function(e) {        
-      //     var startY = e.touches.startY;
-      //     setTimeout(function(){
-      //       if(startY > e.touches.currentY) swiper1.slideNext();  
-      //       else swiper1.slidePrev();
-      //     },100);        
-      //   },
-      // }, 
     }); 
     
 
@@ -93,29 +91,18 @@
         el: '.swiper-pagination',
         clickable: true,
       },
-      allowTouchMove : false,
+      breakpoints: {
+        320: {
+          allowTouchMove : true,  
+        },
+        1200: {
+          allowTouchMove : false, 
+        },
+      },
       navigation: {
         nextEl: '.button-next02',
         prevEl: '.button-prev02',
       },
-      // on: {
-      //   slideChange: function(){        
-      //     var idx = this.activeIndex;
-      //     if(this.activeIndex != 0 && idx != length2) $.fn.fullpage.setAllowScrolling(false);
-      //     if(length2 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) 
-      //   },  
-      //   slideChangeTransitionEnd: function(){
-      //     var idx = this.activeIndex;
-      //     if(idx == 0 || idx >= length2-1) $.fn.fullpage.setAllowScrolling(true);  
-      //   },
-      //   touchMove: function(e) {        
-      //     var startY = e.touches.startY;
-      //     setTimeout(function(){
-      //       if(startY > e.touches.currentY) swiper2.slideNext();  
-      //       else swiper2.slidePrev();
-      //     },100);        
-      //   },
-      // }, 
     }); 
 
       
@@ -132,7 +119,14 @@
         el: '.swiper-pagination',
         clickable: true,
       },
-      allowTouchMove : false,
+      breakpoints: {
+        320: {
+          allowTouchMove : true,  //브라우저가 768보다 클 때
+        },
+        1200: {
+          allowTouchMove : false, 
+        },
+      },
       navigation: {
         nextEl: '.button-next03',
         prevEl: '.button-prev03',
@@ -163,12 +157,23 @@
   });
 
 
+  
+
 
     // 인트로 - 메인 효과
     $(function() {
+
       // 스크롤 막기
-      // $('html, body').css({'overflow': 'hidden', 'height': '100%'});
-      // $('html, body').off('scroll touchmove mousewheel');
+      $('body').on('scroll touchmove mousewheel', function(e){
+        e.preventDefault();
+        e.stopPropagation(); 
+        return false;
+      })
+
+     
+
+
+
 
       var perNum = 100;
       $('.second.circle').circleProgress({
@@ -204,6 +209,9 @@
       $(".notice").css({"opacity" : "0"})
       $(".curtain__panel--left").css({"transform":"translateX(-100%)"});
       $(".curtain__panel--right").css({"transform":"translateX(100%)"});
+
+      // 스크롤 풀기
+      $('body').off('scroll touchmove mousewheel'); 
     };
       
 
@@ -254,7 +262,6 @@
   $(window).scroll(function() {
     window.addEventListener("resize", function() {
       $(window).scrollTop(0);
-
     })
   })
 
