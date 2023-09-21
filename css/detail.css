@@ -25,12 +25,12 @@
 .detailIn a.gotolist {
     font-family: 'Noto sans KR', sans-serif; 
     letter-spacing: -0.5px;
-    font-size: 16px;
+    font-size: 14px;
     color: #ccc;
     display: block;
     border: 1px solid #ccc;
     margin: 50px auto 0;
-    padding: 15px 10px;
+    padding: 15px 5px;
     border-radius: 20px;
     text-align: center;
     width: 150px;
