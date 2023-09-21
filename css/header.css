@@ -8,8 +8,8 @@ header nav {
     display: flex;
     align-items: center;
     display: flex;
-    position: fixed;
-    /* background-color: #333; */
+    position: absolute;
+    background-color: #333;
 }
 header nav>h1 {flex: 1;}
 header nav>h1>a {font-size: 16px;color: #fff;}
@@ -35,12 +35,28 @@ header nav>ul#menu li>span {display: inline-block;margin-right: 20px;}
 header nav>ul#menu li>span>a {color: #888;}
 
 
-
+header.sbHeader nav {display: block; text-align: center;}
 
 
 
 @media (min-width : 1440px) and (max-width : 1600px) {
     header nav>ul#menu {width: 1000px;}
+}
+@media (min-width : 1200px) and (max-width : 1600px) {
+    header nav>ul#menu {width: 900px;}
+    header.sbHeader nav>ul#menu {width: 1000px;}
+}
+@media (min-width : 1024px) and (max-width : 1200px) {
+    header nav>ul#menu {width: 724px;}
+}
+@media (min-width : 768px) and (max-width : 1023.9px) {
+    header nav>ul#menu {width: 600px;}
+    header nav>ul#menu li>span {margin-right: 10px;font-size: 13px;}
+}
+@media (min-width : 320px) and (max-width : 767.9px) {
+    header nav {display: block;text-align: center;}
+    header nav>ul#menu li:not(:first-child) {display: none;}
+    header nav>ul#menu {width: 300px;}
 }
 /* @media (min-width: 1281px) and (max-width:1680px) { 
     header nav {width: 850px;}
