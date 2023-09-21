@@ -11,13 +11,15 @@
 
 
 .detailIn {width: 1000px;margin: 0 auto;padding-top: 210px;padding-bottom: 150px;}
-.detailIn h1 {color: #fff;font-size: 50px;font-weight: bold;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-bottom: 50px;}
+.detailIn h1 {color: #fff;letter-spacing: -0.05em;font-size: 50px;font-weight: bold;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-bottom: 20px;}
 .detailIn h2 {color: #ddd;font-size: 30px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 130px;margin-bottom: 20px;}
 .detailIn h2.last {margin-top: 0;}
 .detailIn p {color: #ccc;font-size: 20px;font-family: 'Noto sans KR', sans-serif; letter-spacing: -0.5px;text-align: left;}
 
 .detailIn .mainImg,
 .detailIn .mapImg {width: 100%;border-radius: 15px;}
+
+
 
 .detailIn a.gotosite,
 .detailIn a.gotolist {
@@ -33,11 +35,60 @@
     text-align: center;
     width: 150px;
 }
+.detailIn a.gotolist {margin-top: 20px;}
 .detailIn a.gotolist:hover,
 .detailIn a.gotosite:hover {background-color: #fff;color: #444;font-weight: bold;}
 
-.detailIn .workinfo {height: 250px;text-align: left;}
-.detailIn ul {display: flex;margin-bottom: 15px;align-items: center;}
-.detailIn ul li {font-size: 19px;color: #ccc;}
-.detailIn ul li:nth-child(2n-1) {background-color:rgba(10, 239, 239, 0.4);border-radius: 15px;padding: 5px;color: #fff;width: 100px;text-align: center;display: inline-block;margin-right: 20px;}
+.detailIn .workinfo {height: 150px;text-align: left;}
+.detailIn .workinfo ul {display: flex;margin-bottom: 15px;align-items: center;}
+.detailIn .workinfo ul li {font-size: 19px;color: #ccc;}
+.detailIn .workinfo ul li:nth-child(2n-1) {background-color:rgba(10, 239, 239, 0.4);border-radius: 15px;padding: 5px;color: #fff;width: 100px;text-align: center;display: inline-block;margin-right: 20px;}
 
+
+
+
+
+/* 해시태그 */
+.detailIn>ul {display: flex;margin-top: 30px;column-gap: 10px;margin-bottom: 30px;}
+.detailIn>ul>li {
+  border: 1px solid rgba(12, 231, 231, 0.596);
+  border-radius: 30px;
+  font-size: 13px;
+  color: rgba(10, 241, 241, 0.829);
+  padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+@media (min-width : 1200px) and (max-width : 1600px) {
+    .detailIn p, .detailIn .workinfo ul li {font-size: 18px;}
+}
+
+@media (min-width : 1024px) and (max-width : 1199.9px) {
+    .detailIn {width: 724px}
+    .detailIn p, .detailIn .workinfo ul li {font-size: 16px;}
+}
+@media (min-width : 768px) and (max-width : 1023.9px) {
+    .detailIn {width: 600px}
+    .detailIn p, .detailIn .workinfo ul li {font-size: 14px;}
+}
+
+@media (min-width : 320px) and (max-width : 767.9px) {
+    .detailIn {padding-top: 150px;}
+    .detailIn {width: 100%}
+    .detailIn p, .detailIn .workinfo ul li {font-size: 12px;}
+    .detailIn h1 {font-size: 36px;margin-bottom: 20px;}
+    .detailIn a.gotosite, .detailIn a.gotolist {
+        width: 100px;
+        padding: 10px 8px;
+        margin: 30px auto 0;
+        font-size: 14px;
+    }
+    .detailIn h2 {margin-top: 80px;}
+    .detailIn .workinfo ul li:nth-child(2n-1) {width: 60px;margin-right: 10px;}
+}
