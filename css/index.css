@@ -19,6 +19,9 @@
 .fp-tableCell {background-color: #222 !important;}
 .fp-tableCell>h1.title {color: #fff !important;width: 1200px;text-align: left;margin: 0 auto 20px;font-family: Poppins, Pretendard, "sans-serif";font-weight: bold;} 
 
+
+
+
 .section {font-size: 2.5vw;position: relative;}
 .swiper-container {width: 100%;background-color: rgb(34, 34, 34);}
 .swiper-wrapper {position: relative;width: 1200px;margin: 0 auto;}
@@ -388,7 +391,7 @@
 .slickImg {
   width: 1200px;
   /* padding-top: 50px; */
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   overflow: hidden;
 }
@@ -424,7 +427,7 @@
 }
 .slickslider .slick-dots {display: none !important;}
 
-.fp-tableCell>h1.foottitle {text-align: center;}
+.fp-tableCell>h1.foottitle {text-align: center;margin: 30px auto 0;}
 .sec5 p.footsbtitle {color: #aaa;font-size: 13px;text-align: center;margin-top: 20px;}
 
 
@@ -476,6 +479,7 @@
   .swiper-wrapper,
   .slickImg {width: 900px;}
   .fp-tableCell>h1.title {width: 900px;}
+  .fp-tableCell>h1.foottitle {margin: 20px auto;}
   .profileContent {width: 900px;}
   .webPuContent {width: 900px;}
   .mainContent .imgWrap .titleBox .mainTitle h2 {font-size: 12rem;}
