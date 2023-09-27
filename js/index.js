@@ -231,7 +231,7 @@
       speed: 300,
       dots: true,
       autoplay: true,     
-      autoplaySpeed: 3000
+      autoplaySpeed: 2000
     });
     $('.slickslider02').slick({
       infinite: true,
