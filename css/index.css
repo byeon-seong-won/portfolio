@@ -492,6 +492,8 @@
   .webPuContent>div>div:nth-child(2)>button {padding: 5px 15px;font-size: 14px;}
   .slickslider {margin: 0;padding-bottom: 50px;}
   .slickslider02 {display: none !important;}
+  .slickslider div {height: 150px;}
+  .slick-prev, .slick-next {display: none !important;}
 }
 
 
@@ -501,7 +503,8 @@
   .swiper-wrapper,
   .slickImg {width: 724px;}
   .fp-tableCell>h1.title {width: 724px;}
-  .profileContent  {width: 724px;}
+  .fp-tableCell>h1.foottitle {margin-bottom: 20px;}
+  .profileContent {width: 724px;}
   .webPuContent {width: 724px;}
   .mainContent .imgWrap .titleBox .mainTitle h2 {font-size: 12rem;}
   .profileContent>div:nth-child(1)>p,
@@ -517,6 +520,8 @@
   .webPuContent>div>div:nth-child(2)>h1 {font-size: 20px;}
   .webPuContent>div>div:nth-child(2)>p {font-size: 16px;}
   .webPuContent>div>div:nth-child(2)>ul {flex-wrap: wrap;margin-top: 20px;gap: 5px;}
+  .slickslider div {height: 100px;}
+  .slick-prev, .slick-next {display: none !important;}
 }
 
 /* tablet 2*/
@@ -526,6 +531,7 @@
   .slickImg {width: 600px;}
   .fp-tableCell>h1.title {width: 490px;font-size: 25px;}
   .fp-tableCell>h1.title.aboutTitle {width: 600px;}
+  .fp-tableCell>h1.foottitle {margin-bottom: 20px;}
   .profileContent  {width: 600px;flex-direction: column;}
   .webPuContent {width: 600px;}
   .mainContent .imgWrap .titleBox .mainTitle h2 {font-size: 8rem;}
@@ -565,6 +571,8 @@
 
   .notice {width: 200px;height: 350px;}
   .second.circle>canvas {width: 150px !important;height: 150px !important;}
+  .slickslider div {height: 100px;}
+  .slick-prev, .slick-next {display: none !important;}
 }
 
 
