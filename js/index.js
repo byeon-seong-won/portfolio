@@ -107,7 +107,7 @@
 
       
 
-    // swiper - renewal
+    // swiper - mobile app
     var length3 = $(".sec4 .swiper-slide").length;
     var swiper3 = new Swiper('.sec4Swiper', {
       loop : true,
@@ -131,26 +131,15 @@
         nextEl: '.button-next03',
         prevEl: '.button-prev03',
       },
-      // mousewheel: true,
-      // on: {
-      //   slideChange: function(){        
-      //     var idx = this.activeIndex;
-      //     if(this.activeIndex != 0 && idx != length3) $.fn.fullpage.setAllowScrolling(false);
-      //     if(length3 == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false)
-      //   },  
-      //   slideChangeTransitionEnd: function(){
-      //     var idx = this.activeIndex;
-      //     if(idx == 0 || idx >= length3-1) $.fn.fullpage.setAllowScrolling(true);   
-      //   },
-      //   touchMove: function(e) {        
-      //     var startY = e.touches.startY;
-      //     setTimeout(function(){
-      //       if(startY > e.touches.currentY) swiper3.slideNext();  
-      //       else swiper3.slidePrev();
-      //     },100);        
-      //   },
-      // }, 
+
     }); 
+
+
+
+  
+
+
+
 
 
 
