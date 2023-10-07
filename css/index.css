@@ -40,7 +40,7 @@
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {opacity: 1 !important;}
 .swiper-pagination-bullet {background-color: #eee !important;}
-.swiper-pagination-bullet-active {background-color:rgba(12, 231, 231, 0.596) !important; box-shadow: 0.5px 0.5px 2px 3px rgba(8, 207, 207, 0.596) !important;}
+.swiper-pagination-bullet-active {background-color:rgba(12, 231, 231, 0.7) !important; box-shadow: 0.5px 0.5px 2px 3px rgba(8, 207, 207, 0.7) !important;}
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {bottom: 100px !important;}
 
 
@@ -64,10 +64,10 @@
 .webPuContent>div>div:nth-child(2)>p {font-size: 20px;font-family: 'Noto sans KR',sans-serif;font-weight: 600;color: #ddd;letter-spacing: -0.5px;}
 .webPuContent>div>div:nth-child(2)>ul {display: flex;margin-top: 30px;column-gap: 10px;}
 .webPuContent>div>div:nth-child(2)>ul>li {
-  border: 1px solid rgba(12, 231, 231, 0.596);
-  border-radius: 30px;
-  font-size: 13px;
-  color: rgba(10, 241, 241, 0.829);
+  border: 2px solid rgba(12, 231, 231, 0.6);
+  border-radius: 20px;
+  font-size: 14px;
+  color: rgba(10, 241, 241, 0.9);
   padding: 5px 10px;
 }
 .webPuContent>div>div:nth-child(2)>button {
