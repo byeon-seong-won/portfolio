@@ -10,6 +10,7 @@ header nav {
     display: flex;
     position: absolute;
     background-color: #333;
+    
 }
 header nav>h1 {flex: 1;}
 header nav>h1>a {font-size: 16px;color: #fff;}
@@ -30,6 +31,7 @@ header nav>ul#menu li:not(:first-child) {flex: 1;display: flex;justify-content: 
 
 header nav>ul#menu li:first-child  {flex: 1;}
 header nav>ul#menu li:first-child a {color: #fff;font-family: 'Anton', sans-serif;font-size: 25px;}
+header nav>ul#menu li:first-child a:nth-child(2) {margin-left: 5px;font-size: 28px;}
 header nav>ul#menu li:last-child>span.active a {color: #ddd;}
 header nav>ul#menu li>span {display: inline-block;margin-right: 20px;}
 header nav>ul#menu li>span>a {color: #888;}

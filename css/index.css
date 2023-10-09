@@ -16,14 +16,21 @@
 
 /* 공통 */
 #fullpage {width:100%;height:100%;}
-.fp-tableCell {background-color: #222 !important;}
+.fp-tableCell {
+  /* background-color: #222 !important; */
+  background-color: #272829 !important;
+}
 .fp-tableCell>h1.title {color: #fff !important;width: 1200px;text-align: left;margin: 0 auto 20px;font-family: Poppins, Pretendard, "sans-serif";font-weight: bold;} 
 
 
 
 
 .section {font-size: 2.5vw;position: relative;}
-.swiper-container {width: 100%;background-color: rgb(34, 34, 34);}
+.swiper-container {
+  width: 100%;
+  background-color: #272829;
+  /* background-color: rgb(34, 34, 34); */
+}
 .swiper-wrapper {position: relative;width: 1200px;margin: 0 auto;}
 .swiper-slide {
   display: flex;
@@ -56,30 +63,41 @@
   margin-left: 0;
 }
 .webPuContent>div {width: 100%;height: 100%;display: flex;column-gap: 50px;align-items: center;}
+.webPuContent.webPuContent04>div {column-gap: 20px;}
 .webPuContent>div>div {flex: 1;}
 .webPuContent>div>div:nth-child(2) {flex: 1;}
 .webPuContent>div>div>img {width: 100%;border-radius: 10px;}
 .webPuContent>div>div:nth-child(2) {text-align: left;}
 .webPuContent>div>div:nth-child(2)>h1 {color: #fff;font-size:30px;font-family: Poppins, Pretendard,  'Noto sans KR', "sans-serif";}
-.webPuContent>div>div:nth-child(2)>p {font-size: 20px;font-family: 'Noto sans KR',sans-serif;font-weight: 600;color: #ddd;letter-spacing: -0.5px;}
+.webPuContent>div>div:nth-child(2)>p {font-size: 20px;font-family: 'Noto sans KR',sans-serif;font-weight: 600;color: #ddd;letter-spacing: -0.05em;}
 .webPuContent>div>div:nth-child(2)>ul {display: flex;margin-top: 30px;column-gap: 10px;}
 .webPuContent>div>div:nth-child(2)>ul>li {
-  border: 2px solid rgba(12, 231, 231, 0.6);
-  border-radius: 20px;
-  font-size: 14px;
-  color: rgba(10, 241, 241, 0.9);
-  padding: 5px 10px;
+  /* border: 2px solid rgba(12, 231, 231, 0.6); */
+  border-radius: 10rem;
+  font-size: 16px;
+  /* color: rgba(10, 241, 241, 0.9); */
+  color: rgb(17, 191, 197);
+  /* border-bottom: 1px solid  rgb(17, 191, 197); */
+  /* border: 0.12rem solid #aaa; */
+  /* border: 0.12rem solid rgb(106, 248, 149); */
+  padding: 0.3rem;
 }
 .webPuContent>div>div:nth-child(2)>button {
   color: #fff;
   font-size: 16px;
-  background-color: rgba(10, 239, 239, 0.4);
+  background-color: rgba(17, 191, 197,0.5);
+  /* background-color: rgba(10, 239, 239, 0.5); */
   border-radius: 15px;
-  padding: 8px 20px;
+  /* padding: 8px 20px; */
+  padding: 0.4rem 1.2rem;
   text-align: center;
   border: none;
 }
-
+.webPuContent>div>div:nth-child(2)>button:hover {
+  background-color: rgb(17, 191, 197);
+  color: #111;
+  font-weight: bold;
+}
 
 
 
@@ -469,6 +487,7 @@
   .fp-tableCell>h1.title {width: 1000px;}
   .profileContent  {width: 1000px;}
   .webPuContent {width: 1000px;}
+
 }
 
 
@@ -494,7 +513,14 @@
   .slickslider02 {display: none !important;}
   .slickslider div {height: 150px;}
   .slick-prev, .slick-next {display: none !important;}
+  .webPuContent > div > div:nth-child(2) > ul {flex-wrap: wrap;gap: 5px;}
+  .webPuContent>div>div:nth-child(2)>ul {margin-top: 18px;}
 }
+
+@media (min-width : 1200px) and (max-width : 1600px) {
+  .webPuContent>div>div:nth-child(2)>ul>li {font-size: 12px;padding: 3px 5px;}
+}
+
 
 
 /* tablet 1*/
@@ -514,12 +540,12 @@
   .profileContent>div:nth-child(2)>p,
   .profileContent>div:nth-child(2)>div>p:nth-child(1) {font-size: 18px;}
   .webPuContent>div>div:nth-child(2)>ul>li {font-size: 13px;padding: 3px 5px}
-  .webPuContent>div>div:nth-child(2)>button {padding: 5px 15px;font-size: 14px;}
+  .webPuContent>div>div:nth-child(2)>button {padding: 5px 15px;font-size: 14px;margin-top: 20px;}
   .slickslider {margin: 0;padding-bottom: 50px;}
   .slickslider02 {display: none !important;}
   .webPuContent>div>div:nth-child(2)>h1 {font-size: 20px;}
   .webPuContent>div>div:nth-child(2)>p {font-size: 16px;}
-  .webPuContent>div>div:nth-child(2)>ul {flex-wrap: wrap;margin-top: 20px;gap: 5px;}
+  .webPuContent>div>div:nth-child(2)>ul {flex-wrap: wrap;margin-top: 20px;gap: 8px;}
   .slickslider div {height: 100px;}
   .slick-prev, .slick-next {display: none !important;}
 }
