@@ -134,7 +134,60 @@
 
     }); 
 
+    
 
+    // mobile detail - swiper
+    var swiper4 = new Swiper('.mo01swiper', {
+      loop : true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true,
+      loopAdditionalSlides: 1,
+      speed: 1000,
+      navigation: {
+        nextEl: '.button-next04',
+        prevEl: '.button-prev04',
+      },
+    }); 
+
+    var swiper5 = new Swiper('.mo02swiper', {
+      loop : true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true,
+      loopAdditionalSlides: 1,
+      speed: 1000,
+      navigation: {
+        nextEl: '.button-next05',
+        prevEl: '.button-prev05',
+      },
+    }); 
+
+    var swiper6 = new Swiper('.mo03swiper', {
+      loop : true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true,
+      loopAdditionalSlides: 1,
+      speed: 1000,
+      navigation: {
+        nextEl: '.button-next06',
+        prevEl: '.button-prev06',
+      },
+    }); 
+
+    var swiper7 = new Swiper('.mo04swiper', {
+      loop : true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true,
+      loopAdditionalSlides: 1,
+      speed: 1000,
+      navigation: {
+        nextEl: '.button-next07',
+        prevEl: '.button-prev07',
+      },
+    }); 
 
   
 

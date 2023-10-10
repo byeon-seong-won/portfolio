@@ -482,8 +482,8 @@
 
 /* 작은 PC 1 */
 @media (min-width : 1440px) and (max-width : 1600px) {
-  .swiperArr {width: 1200px;}
-  .swiper-wrapper {width: 1000px;}
+  .index .swiperArr {width: 1200px;}
+  .index .swiper-wrapper {width: 1000px;}
   .fp-tableCell>h1.title {width: 1000px;}
   .profileContent  {width: 1000px;}
   .webPuContent {width: 1000px;}
@@ -493,8 +493,8 @@
 
 /* 작은 PC 2 */
 @media (min-width : 1200px) and (max-width : 1439.9px) {
-  .swiperArr {width: 1100px;}
-  .swiper-wrapper,
+  .index .swiperArr {width: 1100px;}
+  .index .swiper-wrapper,
   .slickImg {width: 900px;}
   .fp-tableCell>h1.title {width: 900px;}
   .fp-tableCell>h1.foottitle {margin: 20px auto;}
@@ -525,8 +525,8 @@
 
 /* tablet 1*/
 @media (min-width : 1024px) and (max-width : 1199.9px) {
-  .swiperArr {width: 924px;}
-  .swiper-wrapper,
+  .index .swiperArr {width: 924px;}
+  .index .swiper-wrapper,
   .slickImg {width: 724px;}
   .fp-tableCell>h1.title {width: 724px;}
   .fp-tableCell>h1.foottitle {margin-bottom: 20px;}
@@ -552,8 +552,8 @@
 
 /* tablet 2*/
 @media (min-width : 768px) and (max-width : 1023.9px) {
-  .swiperArr {width: 700px}
-  .swiper-wrapper,
+  .index .swiperArr {width: 700px}
+  .index .swiper-wrapper,
   .slickImg {width: 600px;}
   .fp-tableCell>h1.title {width: 490px;font-size: 25px;}
   .fp-tableCell>h1.title.aboutTitle {width: 600px;}
