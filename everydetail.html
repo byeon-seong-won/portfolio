@@ -19,7 +19,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <script type="text/javascript" src="js/index.js"></script> 
+
+    <!-- Slick.js -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <script src="js/slick.js"></script>
 </head>
 
 <body>
@@ -57,7 +61,21 @@
                   <li>#popup</li>
                   <li>#기여도 100%</li>
                 </ul>
-                <img src="img/every.PNG" alt="every" class="mainImg">
+                <!-- <img src="img/every_dark.png" alt="every" class="mainImg"> -->
+                <div class="swiper-container wo01swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="img/every01.png" alt="quizmongmain" class="mainImg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/every_darkRe.png" alt="quizmongmain" class="mainImg">
+                      </div>
+                  </div>
+                  <div class="swiperArr swiperArr08">
+                    <div class="swiper-button-prev button-prev08"></div>
+                    <div class="swiper-button-next button-next08"></div>
+                  </div>
+                </div>
                 <!-- <a href="https://www.everyclick.io/" class="gotosite">사이트 바로가기 </a> -->
                 <h2>OverView.</h2>
                 <p>
@@ -88,5 +106,8 @@
             </div>
         </div>
   </div>
-  </section>
+</section>
+<script type="text/javascript" src="js/index.js"></script> 
+<script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
 </body>
+</html>

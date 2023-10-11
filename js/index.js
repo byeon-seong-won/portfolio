@@ -59,7 +59,7 @@
       slidesPerView: 1,
       spaceBetween: 0,
       freeMode: false,
-      speed: 1500,
+      speed: 1000,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -86,7 +86,7 @@
       slidesPerView: 1,
       spaceBetween: 0,
       freeMode: false,
-      speed: 1500,
+      speed: 1000,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -190,6 +190,20 @@
     }); 
 
   
+
+    // work detail - swiper
+    var swiper8 = new Swiper('.wo01swiper', {
+      loop : true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true,
+      loopAdditionalSlides: 1,
+      speed: 1000,
+      navigation: {
+        nextEl: '.button-next08',
+        prevEl: '.button-prev08',
+      },
+    }); 
 
 
 
