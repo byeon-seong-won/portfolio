@@ -12,14 +12,18 @@
 .detailpage .swiper-container .swiper-slide {width: 100%;opacity: 0.3;transition: 1s;}
 .detailpage .swiper-container .swiper-slide.swiper-slide-active {opacity: 1;}
 .detailpage .swiperArr {position: absolute;top: 0;z-index: 10000;width: 100%;right: 0;}
-.detailpage .swiperArr .swiper-button-prev {left: 90%;background-color: #111;padding: 10px;border-radius: 0.3rem;}
-.detailpage .swiperArr .swiper-button-next {border-radius: 0.3rem;right: 0;background-color: #111;padding: 10px;}
+.detailpage .swiperArr .swiper-button-prev {left: 90%;background-color: #111;border-radius: 0.3rem;}
+.detailpage .swiperArr .swiper-button-next {border-radius: 0.3rem;right: 0;background-color: #111;}
+.detailpage .swiperArr .swiper-button-next, .detailpage .swiperArr .swiper-button-prev {padding: 0 10px;top: 80% !important;}
+.detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
 
 .detailpage::-webkit-scrollbar {display: none;}
 
+.detailpage.everydetail .swiperArr .swiper-button-prev {left: 85%;}
+
 
 .detailIn {width: 800px;margin: 0 auto;padding-top: 150px;padding-bottom: 150px;overflow: hidden;}
-.detailIn.moDetailIn {width: 1200px;}
+.detailIn.moDetailIn {width: 1150px;}
 .detailIn h1 {color: #fff;letter-spacing: -0.05em;font-size: 50px;font-weight: bold;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-bottom: 20px;}
 .detailIn h1 a {border: 0.2rem solid #eee;border-radius: 10px;font-size: 32px;color: #eee;padding: 0.12rem;cursor: pointer;display: inline-block;margin-left: 50px;padding: 5px 8px;}
 .detailIn h1 a:hover {background-color: #fff;color: #333;}
@@ -93,7 +97,7 @@
     .detailIn.moDetailIn {width: 924px}  
     .detailpage .swiper-container {width: 100%;}
     .detailIn p, .detailIn .workinfo ul li {font-size: 16px;}
-    .detailpage .swiperArr .swiper-button-prev {left: 87%;background-color: #111;padding: 10px;}
+    .detailpage .swiperArr .swiper-button-prev {left: 87%;}
   
 
 }
@@ -102,7 +106,9 @@
     .detailIn.moDetailIn {width: 650px;}
     .detailpage .swiper-container {width: 100%;}
     .detailIn p, .detailIn .workinfo ul li {font-size: 14px;}
-    .detailpage .swiperArr .swiper-button-prev {left: 80%;background-color: #111;padding: 10px;}
+    .detailpage .swiperArr .swiper-button-prev {left: 82%;;}
+    .detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
+    .detailpage.everydetail .swiperArr .swiper-button-prev {left: 80%;}
 }
 
 @media (min-width : 320px) and (max-width : 767.9px) {
@@ -121,4 +127,18 @@
     .detailpage .swiper-container {width: 100%;}
     .detailIn .workinfo ul li:nth-child(2n-1) {width: 60px;margin-right: 10px;}
     .detailIn h1 a {margin-left: 30px;padding: 3px 5px;}
+    .detailpage .swiperArr .swiper-button-prev {left: 80%;}
+    .detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
+    .detailpage.everydetail .swiperArr {width: 90%;}
+    .detailpage.everydetail .swiperArr .swiper-button-prev {left: 80%;}
+}
+
+@media (min-width : 450px) and (max-width : 610px) {
+    .detailpage .swiperArr .swiper-button-prev {left: 75%;}
+    .detailpage.everydetail .swiperArr .swiper-button-prev {left: 75%;}
+}
+
+@media (min-width : 320px) and (max-width : 450px) {
+    .detailpage .swiperArr .swiper-button-prev {left: 65%;}
+    .detailpage.everydetail .swiperArr .swiper-button-prev {left: 65%;}
 }

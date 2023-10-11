@@ -70,7 +70,7 @@
 .webPuContent>div>div:nth-child(2) {text-align: left;}
 .webPuContent>div>div:nth-child(2)>h1 {color: #fff;font-size:30px;font-family: Poppins, Pretendard,  'Noto sans KR', "sans-serif";}
 .webPuContent>div>div:nth-child(2)>p {font-size: 20px;font-family: 'Noto sans KR',sans-serif;font-weight: 600;color: #ddd;letter-spacing: -0.05em;}
-.webPuContent>div>div:nth-child(2)>ul {display: flex;margin-top: 30px;column-gap: 10px;}
+.webPuContent>div>div:nth-child(2)>ul {display: flex;margin-top: 30px;column-gap: 10px;column-gap: 20px;flex-wrap: wrap;}
 .webPuContent>div>div:nth-child(2)>ul>li {
   /* border: 2px solid rgba(12, 231, 231, 0.6); */
   border-radius: 10rem;
@@ -518,7 +518,7 @@
 }
 
 @media (min-width : 1200px) and (max-width : 1600px) {
-  .webPuContent>div>div:nth-child(2)>ul>li {font-size: 12px;padding: 3px 5px;}
+  .webPuContent>div>div:nth-child(2)>ul>li {font-size: 15px;padding: 3px 5px;}
 }
 
 
@@ -605,7 +605,7 @@
 /* mobile */
 @media (min-width : 320px) and (max-width : 767.9px) {
   .fp-tableCell {padding: 150px 20px 0;}
-  .swiperArr {display: none;}
+  .index .swiperArr {display: none;}
   .swiper-wrapper,
   .slickImg {width: 100%;}
   .fp-tableCell>h1.title {width: 100%;font-size: 25px;}
