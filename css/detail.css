@@ -35,25 +35,29 @@
 .detailIn .mapImg {width: 100%;border-radius: 15px;}
 
 
-
+.detailIn.reactdetail .gositeBtn {display: flex;align-content: center;justify-content: space-between;width: 50%;margin: 0 auto;column-gap: 20px;}
 .detailIn a.gotosite,
 .detailIn a.gotolist {
     font-family: 'Noto sans KR', sans-serif; 
     letter-spacing: -0.05rem;
     font-size: 16px;
-    display: block;
-    margin: 50px auto 0;
     padding: 0.8rem 0.12rem;
-    width: 30%;
+    flex: 1;
     border-radius: 20px;
     text-align: center;
     align-items: center;
     border: 0.15rem solid #fff;
     /* border: 0.12rem solid #fff; */
     padding: 1rem 0.05rem;
+    display: block;
+    width: 30%;
+    margin: 50px auto 0;
     border-radius: 8px;
     color: #fff;
 }
+.detailIn.reactdetail a.gotosite,
+.detailIn a.gotolist {display: inline-block;width: auto;margin: 0;}
+
 .detailIn a.gotolist {margin-top: 20px;}
 .detailIn a.gotolist:hover,
 .detailIn a.gotosite:hover {background-color: #fff;color: #111;font-weight: bold;}
