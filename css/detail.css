@@ -40,7 +40,7 @@
 
 
 
-.detailIn.reactdetail .gositeBtn {display: flex;align-content: center;justify-content: space-between;width: 50%;margin: 0 auto;column-gap: 20px;}
+.detailIn.reactdetail .gositeBtn {display: flex;align-content: center;justify-content: space-between;width: 50%;margin: 30px auto 0;column-gap: 20px;}
 .detailIn a.gotosite,
 .detailIn a.gotolist {
     font-family: 'Noto sans KR', sans-serif; 
