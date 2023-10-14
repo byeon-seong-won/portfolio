@@ -27,12 +27,17 @@
 .detailIn h1 {color: #fff;letter-spacing: -0.05em;font-size: 50px;font-weight: bold;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-bottom: 20px;}
 .detailIn h1 a {border: 0.2rem solid #eee;border-radius: 10px;font-size: 32px;color: #eee;padding: 0.12rem;cursor: pointer;display: inline-block;margin-left: 50px;padding: 5px 8px;}
 .detailIn h1 a:hover {background-color: #fff;color: #333;}
-.detailIn h2 {color: #ddd;font-size: 30px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 130px;margin-bottom: 20px;}
-.detailIn h2.last {margin-top: 0;}
+.detailIn h2 {color: #ddd;font-size: 30px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 100px;margin-bottom: 20px;}
+/* .detailIn h2.last {margin-top: 20px;} */
 .detailIn p {color: #ccc;font-size: 20px;font-family: 'Noto sans KR', sans-serif; letter-spacing: -0.05em;text-align: left;}
 
 .detailIn .mainImg,
 .detailIn .mapImg {width: 100%;border-radius: 15px;}
+
+.detailIn.reactdetail table {color: #ddd;font-size: 16px;}
+.detailIn.reactdetail table th {background-color: #eee;font-size: 22px;color: #333;padding: 10px;}
+.detailIn.reactdetail table tr td {padding:  5px;}
+
 
 
 .detailIn.reactdetail .gositeBtn {display: flex;align-content: center;justify-content: space-between;width: 50%;margin: 0 auto;column-gap: 20px;}
