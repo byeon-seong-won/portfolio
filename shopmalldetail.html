@@ -73,96 +73,29 @@
                   <a href="https://github.com/byeon-seong-won/react.js_shopmall_project/tree/master" class="gotosite" target="_blank">GitHub 바로가기</a>
                 </div>
                 <h2>OverView.</h2>
-                <p>page - main / detail / cart</p>
-                <p>component - header/ footer / modal</p>
-                <p>상태관리 - redux toolkit(createSlice) / useState</p>
+                <p>Pages : main + detail + cart</p>
+                <p>Component : header + footer + modal</p>
+                <p>상태관리 : redux toolkit(createSlice) + useState</p>
+                <p>responsive : styled-component </p>
                 <h2>Service Info.</h2>
-
-                <table border="1px solid #fff" cellpadding="0" cellspacing="0">
-                    <tr style="text-align: center;">		
-                        <th>메인페이지</th>
-                        <th>상세페이지</th>
-                        <th>장바구니</th>
-                    </tr>
-                    <tr>
-                        <td>
-                          - MySQL과 node.js 이용해 상품 table 생성 후 more view 클릭시 해당 데이터 가져오기
-                        </td>
-                        <td>
-                          - redux로 상태관리
-                        </td>
-                        <td>
-                          - redux로 상태관리
-                        </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        - tab기능을 이용해 type별 상품 노출
-                      </td>
-                      <td>
-                        - 구매하기 클릭시 장바구니로 이동되며 해당 상품 수량 +1
-                      </td>
-                      <td>
-                        - 각 상품별 수량에 따른 가격변동과 총 합계 금액 계산
-                      </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      - 상품별 호버시 해당 상품이름 모달창 노출
-                    </td>
-                    <td>
-                      - 장바구니 담기 클릭시 이중 모달창 : 확인 모달창 노출 -> 확인 클릭시 장바구니로 이동되며 수량 +1 
-                    </td>
-                    <td>
-                      - 각 상품별 삭제버튼 클릭시 -> 확인 모달창 노출 -> 확인 클릭시 삭제
-                    </td>
-                </tr>
-                <tr>
-                  <td>
-                    - 클릭시 상세페이지 이동
-                  </td>
-                  <td>
-                    - 장바구니에 중복 상품 있을 경우 수량 +1, 없을 경우 항목 추가
-                  </td>
-                  <td>
-                    - 수량 변경 버튼 + 수량이 음수가 되지 않도록 alert 창 노출
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  </td>
-                  <td>
-                    - 탭 기능 구현(+애니메이션 효과)
-                  </td>
-                  <td> 
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  </td>
-                  <td>
-                    - 하단 탭메뉴1 공간, 배경색 클릭시 해당 이미지와 배경색상 노출
-                  </td>
-                  <td>
-                   
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  </td>
-                  <td>
-                    - 하단 탭메뉴2 각 텍스트 아코디언 메뉴로 노출
-                  </td>
-                  <td>
-                   
-                  </td>
-                </tr>
-
-
-                </table> 
-
-                
-              
+                <h3><span class="xi-check-min"></span>Main page</h3>
+                <p>1) MySQL과 node.js 이용해 상품 table 생성 후 'more view' 클릭시 해당 데이터 가져오기</p>
+                <p>2) tab기능을 이용해 type별 상품 노출</p>
+                <p>3) 상품별 호버시 해당 상품이름 모달창 노출</p>
+                <p>4) 상품 클릭시 상세페이지 이동</p>
+                <h3><span class="xi-check-min"></span>Detail page</h3>
+                <p>1) redux(createSlice)로 상태관리</p>
+                <p>2) 구매하기 클릭시 장바구니로 이동되며 해당 상품 수량 +1</p>
+                <p>3) 장바구니 담기 클릭시 이중 모달창 : 확인 모달창 노출 -> 확인 클릭시 장바구니로 이동되며 수량 +1 </p>
+                <p>4) 장바구니에 중복 상품 있을 경우 수량 +1, 없을 경우 항목 추가</p>
+                <p>5) 탭 기능 구현 : useState로 상태관리 (+애니메이션 효과)</p>
+                <p>6) 하단 탭메뉴1 공간, 배경색 클릭시 해당 이미지와 배경색상 노출</p>
+                <p>7) 하단 탭메뉴2 각 텍스트 아코디언 메뉴로 노출</p>
+                <h3><span class="xi-check-min"></span>Cart page</h3>
+                <p>1) redux(createSlice)로 상태관리</p>
+                <p>2) 각 상품별 수량에 따른 가격변동과 총 합계 금액 계산</p>
+                <p>3) 각 상품별 삭제버튼 클릭시 -> 확인 모달창 노출 -> 확인 클릭시 삭제</p>
+                <p>4) 수량 변경 버튼 + 수량이 음수가 되지 않도록 alert 창 노출</p>  
                 <!-- <h2>Site Map.</h2>
                 <img src="img/shopmall_map.png" alt="shopmall_map" class="mapImg"> -->
                 <!-- <h2>Devices.</h2>
@@ -179,7 +112,7 @@
                     </ul>
                     <ul>
                         <li>사용 툴</li>
-                        <li>React, Styled-component, CSS, Javascript, Node.js, mysql, Git</li>
+                        <li>React.js, Styled-component, HTML, Javascript, Node.js, MySQL, Git</li>
                     </ul>
                 </div>
                 <!-- <video class="bg-video__content" autoplay muted loop width="100%">

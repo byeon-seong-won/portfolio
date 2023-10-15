@@ -56,9 +56,11 @@ header.sbHeader nav {display: block; text-align: center;}
     header nav>ul#menu li>span {margin-right: 10px;font-size: 13px;}
 }
 @media (min-width : 320px) and (max-width : 767.9px) {
-    header nav {display: block;text-align: center;}
+    header nav {display: block;text-align: center;height: 60px;line-height: 60px;}
+    header nav>ul#menu li {line-height: 60px;}
     header nav>ul#menu li:not(:first-child) {display: none;}
-    header nav>ul#menu {width: 300px;}
+    header nav>ul#menu {width: 300px;height: 60px;}
+    header nav>ul#menu li:first-child a {font-size: 22px;}
 }
 /* @media (min-width: 1281px) and (max-width:1680px) { 
     header nav {width: 850px;}

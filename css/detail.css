@@ -34,9 +34,7 @@
 .detailIn .mainImg,
 .detailIn .mapImg {width: 100%;border-radius: 15px;}
 
-.detailIn.reactdetail table {color: #ddd;font-size: 16px;}
-.detailIn.reactdetail table th {background-color: #eee;font-size: 22px;color: #333;padding: 10px;}
-.detailIn.reactdetail table tr td {padding:  5px;}
+.detailIn.reactdetail h3 {color: #ddd;font-size: 22px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 35px;}
 
 
 
@@ -114,7 +112,7 @@
     .detailIn {width: 600px}
     .detailIn.moDetailIn {width: 650px;}
     .detailpage .swiper-container {width: 100%;}
-    .detailIn p, .detailIn .workinfo ul li {font-size: 14px;}
+    .detailIn p, .detailIn .workinfo ul li {font-size: 16px;}
     .detailpage .swiperArr .swiper-button-prev {left: 82%;;}
     .detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
     .detailpage.everydetail .swiperArr .swiper-button-prev {left: 80%;}
@@ -124,7 +122,7 @@
     .detailIn,
     .detailIn.moDetailIn {width: 100%;padding-top: 0;}
     .detailpage .swiper-container {width: 100%;}
-    .detailIn p, .detailIn .workinfo ul li {font-size: 12px;}
+    .detailIn p, .detailIn .workinfo ul li {font-size: 15px;}
     .detailIn h1 {font-size: 36px;margin-bottom: 20px;}
     .detailIn a.gotosite, .detailIn a.gotolist {
         width: 100px;
@@ -134,7 +132,7 @@
     }
     .detailIn h2 {margin-top: 80px;}
     .detailpage .swiper-container {width: 100%;}
-    .detailIn .workinfo ul li:nth-child(2n-1) {width: 60px;margin-right: 10px;}
+    .detailIn .workinfo ul li:nth-child(2n-1) {width: 60px;margin-right: 10px;padding: 3px 10px;}
     .detailIn h1 a {margin-left: 30px;padding: 3px 5px;}
     .detailpage .swiperArr .swiper-button-prev {left: 80%;}
     .detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
@@ -145,6 +143,10 @@
 @media (min-width : 450px) and (max-width : 610px) {
     .detailpage .swiperArr .swiper-button-prev {left: 75%;}
     .detailpage.everydetail .swiperArr .swiper-button-prev {left: 75%;}
+}
+
+@media (min-width : 320px) and (max-width : 610px) {
+    .detailIn .workinfo ul {flex-direction: column;align-items: start;gap: 5px;}
 }
 
 @media (min-width : 320px) and (max-width : 450px) {
