@@ -13,7 +13,7 @@ $(document).ready(function() {
       anchors: ['sec0','sec1', 'sec2', 'sec3', 'sec4'],
       menu: '#menu',
       scrollingSpeed: 1000,
-      responsiveWidth: 768,
+      responsiveWidth: 1200,
       // scrollBar: true,
       onLeave: function(origin, destination, direction) {
         if(width > 1024) {
