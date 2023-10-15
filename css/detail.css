@@ -6,7 +6,9 @@
     -ms-overflow-style: none; 
     box-sizing: border-box;
     scrollbar-width: none;
+    
 }
+.detailpage>div {background-color: #272829}
 
 .detailpage .swiper-container {position: relative;width: 93%;margin: 0 auto;padding-top: 100px;}
 .detailpage .swiper-container .swiper-slide {width: 100%;opacity: 0.3;transition: 1s;}
