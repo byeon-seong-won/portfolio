@@ -1,8 +1,4 @@
-
-
-
-
-  $(document).ready(function() {
+$(document).ready(function() {
 
     var width = $( window ).width();
 
