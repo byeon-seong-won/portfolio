@@ -36,6 +36,8 @@
 .detailIn .mainImg,
 .detailIn .mapImg {width: 100%;border-radius: 15px;}
 
+.detailIn.reactdetail .mainImg {display: none;}
+.reactdetail video {display: block;}
 .detailIn.reactdetail h3 {color: #ddd;font-size: 22px;text-align: left;font-family: Poppins, Pretendard, "sans-serif";margin-top: 35px;}
 
 
@@ -140,6 +142,8 @@
     .detailpage .swiper-button-prev:after, .detailpage .swiper-button-next:after {font-size: 20px !important;}
     .detailpage.everydetail .swiperArr {width: 90%;}
     .detailpage.everydetail .swiperArr .swiper-button-prev {left: 80%;}
+    .reactdetail video {display: none;}
+    .detailIn.reactdetail .mainImg {display: block;}
 }
 
 @media (min-width : 450px) and (max-width : 610px) {
