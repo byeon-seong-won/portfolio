@@ -48,7 +48,7 @@
     font-family: 'Noto sans KR', sans-serif; 
     letter-spacing: -0.05rem;
     font-size: 16px;
-    padding: 0.8rem 0.12rem;
+    padding: 0.8rem 0.05rem;
     flex: 1;
     border-radius: 20px;
     text-align: center;
@@ -57,7 +57,7 @@
     /* border: 0.12rem solid #fff; */
     padding: 1rem 0.05rem;
     display: block;
-    width: 30%;
+    width: 25%;
     margin: 50px auto 0;
     border-radius: 8px;
     color: #fff;
