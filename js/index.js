@@ -234,13 +234,14 @@ $(document).ready(function() {
         size:200,
         fill:{
           gradient:["#37FF8B","#37FF8B"],
+          // gradient:["#14bab8","#37FF8B","#32d2b5","#14bab8","#37FF8B","#32d2b5"],
           gradientAngle: Math.PI / 2
         },
         animation:{
           duration:2200,
           easing:"swing"
         },
-        lineCap : "butt",
+        lineCap : "round",
         reverse:true
               
         }).on('circle-animation-progress', function(event, progress) {

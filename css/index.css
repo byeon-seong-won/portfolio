@@ -16,21 +16,12 @@
 
 /* 공통 */
 #fullpage {width:100%;height:100%;}
-.fp-tableCell {
-  /* background-color: #222 !important; */
-  background-color: #272829 !important;
-}
+.fp-tableCell {background-color: #272829 !important;}
 .fp-tableCell>h1.title {color: #fff !important;width: 1200px;text-align: left;margin: 0 auto 20px;font-family: Poppins, Pretendard, "sans-serif";font-weight: bold;} 
 
 
-
-
 .section {font-size: 2.5vw;position: relative;}
-.swiper-container {
-  width: 100%;
-  background-color: #272829;
-  /* background-color: rgb(34, 34, 34); */
-}
+.swiper-container {width: 100%;background-color: #272829;}
 .swiper-wrapper {position: relative;width: 1200px;margin: 0 auto;}
 .swiper-slide {
   display: flex;
@@ -40,7 +31,6 @@
   height: 100%;  
 }
 .swiperArr {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 1400px;height: 100px;z-index: 100;}
-/* .swiperArr .swiper-button-next {position: absolute;right: 100px;} */
 .swiper-button-prev, .swiper-button-next {z-index: 100 !important;}
 .swiper-button-prev::after,
 .swiper-button-next:after {color: #fff !important;z-index: 100 !important;}
@@ -56,12 +46,7 @@
 
 
 /* swiper 컨텐츠 공통 */
-.webPuContent {    
-  height: 50%;
-  width: 1200px;
-  margin: 0 auto;
-  margin-left: 0;
-}
+.webPuContent {height: 50%;width: 1200px;margin: 0 auto;margin-left: 0;}
 .webPuContent>div {width: 100%;height: 100%;display: flex;column-gap: 50px;align-items: center;}
 .webPuContent.webPuContent04>div {column-gap: 20px;}
 .webPuContent>div>div {flex: 1;}
@@ -72,60 +57,24 @@
 .webPuContent>div>div:nth-child(2)>p {font-size: 20px;font-family: 'Noto sans KR',sans-serif;font-weight: 600;color: #ddd;letter-spacing: -0.05em;}
 .webPuContent>div>div:nth-child(2)>ul {display: flex;margin-top: 30px;gap: 10px;flex-wrap: wrap;}
 .webPuContent>div>div:nth-child(2)>ul>li {
-
   font-size: 16px;
-  /* border: 0.12rem solid rgba(17, 191, 197,0.5); */
-  /* border: 2px solid rgba(12, 231, 231, 0.6); */
   border-radius: 10rem;
   font-size: 16px;
-  /* background-color: rgb(17, 191, 197); */
-  /* color: rgba(10, 241, 241, 0.9); */
-  /* color: rgb(17, 191, 197); */
-  /* border-bottom: 1px solid  rgb(17, 191, 197); */
-  /* border: 0.12rem solid #aaa; */
-  /* border: 0.12rem solid rgb(106, 248, 149); */
   padding: 0.3rem 0.5rem;
-  color: rgb(17, 191, 197);;
+  color: rgb(17, 191, 197);
   border: 0.15rem solid rgba(17, 191, 197,0.5)
 }
 .webPuContent>div>div:nth-child(2)>button {
   color: #fff;
   font-size: 16px;
-  /* background-color: rgba(17, 191, 197,0.5); */
-  /* background-color: rgba(10, 239, 239, 0.5); */
   border-radius: 15px;
-  /* padding: 8px 20px; */
   padding: 0.4rem 1.2rem;
   text-align: center;
   border: none;
   border-bottom: 1px solid rgb(17, 191, 197);
   background-color: rgba(17, 191, 197,0.2);
 }
-.webPuContent>div>div:nth-child(2)>button:hover {
-  background-color: rgb(17, 191, 197);
-  color: #111;
-  font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.webPuContent>div>div:nth-child(2)>button:hover {background-color: rgb(17, 191, 197);color: #111;font-weight: bold;}
 
 
 
@@ -230,10 +179,7 @@
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-.hover-text.active {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color));
-}
+.hover-text.active {width: 100%;filter: drop-shadow(0 0 23px var(--animation-color));}
 
 
 
@@ -321,9 +267,6 @@
 .profileContent>div:nth-child(2) {flex: 3.5;text-align: left;}
 .profileContent>div:nth-child(2)>p {color: #fff;font-size:22px;font-family: Poppins, Pretendard, "sans-serif";}
 
-
-
-
 .profileContent>h2 {
   display: inline-block;
   margin-top: 60px;
@@ -340,12 +283,9 @@
 .profileContent>div:nth-child(2) ul li:nth-child(1) {margin-top: 10px;}
 .profileContent>div:nth-child(2) ul li span {color: #aaa;}
 .profileContent>div:nth-child(2) ul li b {color: #eee;}
-
 .profileContent>div:nth-child(2)>div {margin-bottom: 20px;}
 .profileContent>div:nth-child(2)>div>p {font-size: 16px;color: #aaa;}
 .profileContent>div:nth-child(2)>div>p:nth-child(1) {font-size: 22px;color: #fff;font-family: Poppins, Pretendard, "sans-serif";margin-bottom: 0;}
-
-
 .profileContentFlex {
   margin-top: 40px;
   display: flex;
@@ -358,22 +298,9 @@
   transform: translate(-50%,-50%);
   position: relative;
 }
-.profile1 {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.imgprofileFlex {
-  margin-top: 100px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.profileimg {
-  flex: 2;
-  position: relative;
-}
+.profile1 {position: absolute;display: flex;width: 100%;height: 100%;}
+.imgprofileFlex {margin-top: 100px;flex: 1;display: flex;flex-direction: column;}
+.profileimg {flex: 2;position: relative;}
 .profileimg:before {
   content: '';
   position: absolute;
@@ -397,29 +324,8 @@
 
 
 
-
 /* ////////// footer  ////////// */
-
-
-
-
-/* .swiper-container {width: 100%;background-color: rgb(34, 34, 34);}
-.swiper-wrapper {position: relative;width: 1200px;margin: 0 auto;}
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;  
-} */
-
-
-.slickImg {
-  width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-}
+.slickImg {width: 1200px;margin: 0 auto;text-align: center;overflow: hidden;}
 .slick {margin: auto;}
 .slickslider {margin: auto;margin-top: 40px;position: relative;}
 .slickslider div {width: 100%;height: 200px;}
@@ -470,41 +376,8 @@
   background-color: rgba(51, 51, 51,0.7);
 }
 .slickslider .slick-dots {display: none !important;}
-
 .fp-tableCell>h1.foottitle {text-align: center;margin: 30px auto 0;}
 .sec5 p.footsbtitle {color: #aaa;font-size: 13px;text-align: center;margin-top: 20px;}
-
-
-/* .footer {
-  background-color: #000;
-  height: 100px;
-  position : relative;
-  transform : translateY(50%);
-  text-align: center;
-  width: 100%;
-  padding: 40px 0 40px 0;
-}
-.footer>p {color: #aaa;font-size: 13px;} */
-
-
-
-
-
-
-
-
-
-
-/* react */
-
-/* works */
-
-/* publishing */
-/* .sec4 {border: 1px solid #fff;}
-.sec4>h1 {color: #fff;font-size: 40px;font-family: Poppins, Pretendard, "sans-serif";text-align: left;} */
-
-/* planning */
-
 
 
 /* 작은 PC 1 */
@@ -514,9 +387,7 @@
   .fp-tableCell>h1.title {width: 1000px;}
   .profileContent  {width: 1000px;}
   .webPuContent {width: 1000px;}
-
 }
-
 
 /* 작은 PC 2 */
 @media (min-width : 1200px) and (max-width : 1439.9px) {
@@ -547,7 +418,6 @@
 @media (min-width : 1200px) and (max-width : 1600px) {
   .webPuContent>div>div:nth-child(2)>ul>li {font-size: 15px;}
 }
-
 
 
 /* tablet 1*/
