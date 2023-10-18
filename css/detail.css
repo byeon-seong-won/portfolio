@@ -84,9 +84,6 @@
 
 
 
-
-
-
 @media (min-width : 1200px) and (max-width : 1600px) {
     .detailIn p, .detailIn .workinfo ul li {font-size: 18px;}
     .detailpage .swiper-container {width: 100%;}

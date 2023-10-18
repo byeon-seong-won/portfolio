@@ -209,7 +209,7 @@
   text-align:center;
   font-size:30vh;
   color:#fff;
-  background: url(../img/mainImg03.png) no-repeat center center;
+  background: url(../img/mainImg03.png) no-repeat center center rgba(0,0,0,0.3);
   background-size: contain;
   background-blend-mode: multiply;
 }
