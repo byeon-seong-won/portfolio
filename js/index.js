@@ -2,8 +2,6 @@ $(document).ready(function() {
 
     var width = $( window ).width();
 
- 
-
     // 스크롤 풀기
     $('body').off('scroll touchmove mousewheel'); 
 
@@ -39,8 +37,6 @@ $(document).ready(function() {
             $("header.indHeader").css({"position" : "fixed"})
           }
         }
-
-
         if(!$(".sec2").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
         if(!$(".sec3").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); 
         if(!$(".sec4").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
@@ -201,11 +197,6 @@ $(document).ready(function() {
       },
     }); 
 
-
-
-
-
-
   });
 
 
@@ -267,10 +258,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
     // slick slider
     $('.slickslider01').slick({
       infinite: true,
@@ -293,13 +280,6 @@ $(document).ready(function() {
     
 
   
-
-
-
-
-
-
-
 
 
 
