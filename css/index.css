@@ -18,6 +18,7 @@
 #fullpage {width:100%;height:100%;}
 .fp-tableCell {background-color: #272829 !important;}
 .fp-tableCell>h1.title {color: #fff !important;width: 1200px;text-align: left;margin: 0 auto 20px;font-family: Poppins, Pretendard, "sans-serif";font-weight: bold;} 
+.fp-tableCell>h1.title>span {font-size: 20px;display: inline-block;margin-left: 20px;}
 
 
 .section {font-size: 2.5vw;position: relative;}
