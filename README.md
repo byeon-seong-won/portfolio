@@ -6,10 +6,10 @@
 <br>
 
 <h1> Pages </h1>
-About
-Front-end project(React, Vue)
-Work - mobile
-Work - webpage (responsive)
+- About<br>
+- Front end project(React, Vue)<br>
+- Work_mobile<br>
+- Work_webpage (responsive)<br>
 <br>
 
 
