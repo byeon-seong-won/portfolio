@@ -8,7 +8,7 @@ $(document).ready(function() {
     // 전체 fullpage
     $('#fullpage').fullpage({         
       sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-      anchors: ['sec0','sec1', 'sec2', 'sec3', 'sec4'],
+      anchors: ['sec0','sec1', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6'],
       menu: '#menu',
       scrollingSpeed: 1000,
       responsiveWidth: 1200,
@@ -40,11 +40,12 @@ $(document).ready(function() {
         if(!$(".sec2").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
         if(!$(".sec3").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); 
         if(!$(".sec4").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
+        if(!$(".sec5").hasClass("active")) $.fn.fullpage.setAllowScrolling(true);
       },
     });           
   
 
-    // swiper - react project
+    // swiper - work
     var length1 = $(".sec2 .swiper-slide").length;
     var swiper1 = new Swiper('.sec2Swiper', {
       loop : true,
@@ -71,7 +72,7 @@ $(document).ready(function() {
     }); 
     
 
-    // swiper - works
+    // swiper - React / vue project
     var length2 = $(".sec3 .swiper-slide").length;
     var swiper2 = new Swiper('.sec3Swiper', {
       loop : true,
@@ -99,7 +100,7 @@ $(document).ready(function() {
 
       
 
-    // swiper - mobile app
+    // swiper - 2d graphic
     var length3 = $(".sec4 .swiper-slide").length;
     var swiper3 = new Swiper('.sec4Swiper', {
       loop : true,
@@ -125,6 +126,11 @@ $(document).ready(function() {
       },
 
     }); 
+
+
+
+
+
 
     
 
@@ -197,7 +203,71 @@ $(document).ready(function() {
       },
     }); 
 
+
+
+
+
+    
+
+    // swiper - ui/ux
+    var length9 = $(".sec5 .swiper-slide").length;
+    var swiper9 = new Swiper('.sec5Swiper', {
+      loop : true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      freeMode: false,
+      speed: 1000,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          allowTouchMove : true,  //브라우저가 768보다 클 때
+        },
+        1200: {
+          allowTouchMove : false, 
+        },
+      },
+      navigation: {
+        nextEl: '.button-next04',
+        prevEl: '.button-prev04',
+      },
+
+    }); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   

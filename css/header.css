@@ -39,6 +39,9 @@ header.sbHeader nav {display: block; text-align: center;}
 
 
 
+@media (max-width : 1600px) {
+    header nav>ul#menu li:first-child {flex: 0.3;}
+}
 @media (min-width : 1440px) and (max-width : 1600px) {
     header nav>ul#menu {width: 1000px;}
 }
@@ -59,4 +62,5 @@ header.sbHeader nav {display: block; text-align: center;}
     header nav>ul#menu li:not(:first-child) {display: none;}
     header nav>ul#menu {width: 300px;height: 60px;}
     header nav>ul#menu li:first-child a {font-size: 22px;}
+    header nav>ul#menu li:first-child {flex: 1;}
 }
