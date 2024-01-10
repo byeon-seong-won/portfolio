@@ -239,17 +239,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   });
 
 
@@ -288,7 +277,7 @@ $(document).ready(function() {
         startAngle:300,
         size:200,
         fill:{
-          gradient:["#37FF8B","#37FF8B"],
+          gradient:["#fe4e01","#fe4e01"],
           // gradient:["#14bab8","#37FF8B","#32d2b5","#14bab8","#37FF8B","#32d2b5"],
           gradientAngle: Math.PI / 2
         },
@@ -362,4 +351,13 @@ $(document).ready(function() {
   //   })
   // })
 
-
+// 커서
+  document.addEventListener('mousemove', (e) => {
+    let mouseX = e.pageX + 10; // document의 x좌표값
+    let mouseY = e.pageY + 10; // document의 y좌표값
+  
+    let cursor = document.querySelector('.cursor');
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  })
+  

@@ -1,7 +1,7 @@
 @import url(common.css);
 @import url(header.css);
 @import url(detail.css);
-
+@import url(bgani.css);
 
 
 
@@ -106,9 +106,9 @@
   transform: translate(-50%,-50%);
   text-align: center;
   border-radius: 50px;
-  background: linear-gradient(145deg, #242424, #1f1f1f);
-  box-shadow:  26px 26px 52px #0e0e0e,
-               -26px -26px 52px #363636;
+  /* background: linear-gradient(145deg, #242424, #1f1f1f); */
+  /* box-shadow:  26px 26px 52px #0e0e0e,
+               -26px -26px 52px #363636; */
 }
 
 .notice>h1 {font-size: 24px;letter-spacing: -0.05em;font-weight: 500;}
@@ -125,7 +125,7 @@
   height: 200px;
   border-radius: 50%;
   background: #222222;
-  box-shadow: inset 19px 19px 38px #0e0e0e,inset -19px -19px 38px #363636;
+  /* box-shadow: inset 19px 19px 38px #0e0e0e,inset -19px -19px 38px #363636; */
   position: relative;
 }
 .second.circle.ani {animation: ani 1.5s linear;}
@@ -158,12 +158,12 @@
 .button {
   --border-right: 6px;
   --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37FF8B;
+  --animation-color: #fe4e01;
   --fs-size: 1em;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Arial";
+  font-family: 'Zephyr-Regular' !important;
   position: relative;
   text-transform: uppercase;
   color: transparent;
@@ -197,7 +197,7 @@
   transition:all .5s ease-out;
 }
 .curtain__panel--left,
-.curtain__panel--right {background-color: #222;}
+.curtain__panel--right {background-color: #000;}
 
 .mainContent {
   position:absolute;
@@ -210,7 +210,7 @@
   text-align:center;
   font-size:30vh;
   color:#fff;
-  background: url(../img/mainImg03.png) no-repeat center center;
+  /* background: url(../img/mainImg03.png) no-repeat center center; */
   background-size: contain;
   background-blend-mode: multiply;
 }
@@ -230,18 +230,31 @@
   z-index: 100;
 }
 .mainContent .imgWrap .titleBox .mainTitle h2 {
-  font-family: 'Tangerine', cursive;
-  font-size:16rem;
+  font-family: 'Zephyr-Regular';
+  font-size:10rem;
   letter-spacing: 6px;
   font-weight:bold;
-  color:#fff;
+  color : rgb(188, 184, 173);
   text-align:center;  
 }
 
 
 
 
-
+.cursor {
+  position: absolute;
+}
+.cursor .blob {
+  position: absolute;
+  margin: -15px 0 0 -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #fe4e01;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
 
 
 
