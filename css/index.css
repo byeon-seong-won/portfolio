@@ -41,7 +41,7 @@
 .swiper-pagination-bullet-active {background-color:rgba(12, 231, 231, 0.7) !important; box-shadow: 0.5px 0.5px 2px 3px rgba(8, 207, 207, 0.7) !important;}
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {bottom: 100px !important;}
 
-
+/* html.fp-enabled, .fp-enabled body {overflow: hidden !important;} */
 
 
 
@@ -546,12 +546,22 @@
   .profileContent>div:nth-child(2) {margin-top: 20px;}
   .profileContent>div:nth-child(2) ul li>span>b {width: 100%;display: inline-block;}
   .profileContent>div:nth-child(2) ul li>span {font-size: 13px;}
-  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {bottom: 0 !important;}
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {bottom: 20px !important;}
   .notice, .curtain__panel {display: none;}
   .swiper-container {overflow: hidden;}
 
 
 
   
+
 }
 
+
+
+
+/* mobile */
+@media (max-width : 767.9px) {
+  .section.fp-completely {height: 100%;}
+  .section.fp-completely .fp-tableCell {height: 100%;}
+  .fp-tableCell {padding-top: 50px;box-sizing: border-box;}
+}

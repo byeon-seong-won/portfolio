@@ -11,8 +11,7 @@ $(document).ready(function() {
       anchors: ['sec0','sec1', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6'],
       menu: '#menu',
       scrollingSpeed: 1000,
-      responsiveWidth: 1200,
-      // scrollBar: true,
+      responsiveWidth: 1024,
       onLeave: function(origin, destination, direction) {
         if(width > 1024) {
           $('#fullpage').on('scroll touchmove mousewheel', function(event) {                    
